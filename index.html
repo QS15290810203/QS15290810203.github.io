@@ -152,6 +152,111 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/13/第一篇博客/">第一篇博客</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/13/第一篇博客/" class="archive-article-date">
+  	<time datetime="2019-10-13T10:01:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>Javaoop总结</code></pre><p>1.类与对象<br>  抽象的，泛指的，是指从某一类具有相同属性和方法的对象中抽取出来<br>  class代表类<br>  类的作用；实例化对象，方法，工具类<br>  类中分两大块：属性（成员变量）  方法（成员方法）<br>  类如何实例化对象？ new<br>        Person p = new Person();<br>        p.name = “张三”;<br>        p.sex = “男”;<br>        p：对象名<br>        Person p1 = new Person();<br>2. 属性与方法<br>        方法的调用：对象名.方法名<br>        匿名对象调用方法：new 类().方法名<br>        new Person().getA();</p>
+<pre><code>int c = new Person().getD(10, 20);    //实参
+System.out.println(c);</code></pre><p>3.static<br>    static 静态，static用来修饰属性、方法<br>    用static修饰属性：共有的属性——实例化出来的对象，用static修饰的具有相同的值。<br>    用static修饰方法：能通过类名直接调用</p>
+<p>4.封装, oopd三大特征之一；<br>    属性私有化，公开setter和getter方法；</p>
+<p>单例模式<br>    只能实例化一次；<br>    实现单例式的三个步骤：<br>第一：私有化构造方法<br>    private 类名（）{</p>
+<pre><code>} </code></pre><p> 第二：公开一个代理方法<br>    private static 类名 方法名（）{<br>        类名 d=null；<br>    if（count&lt;1）{<br>    d=new 类名（）；<br>    count++;<br>    }<br>    return d;<br>            }<br> 第三：私有化一个静态属性，用来统计new的个数<br>     private static int count=0;</p>
+<p>5.继承,oop三大特征之一<br>    继承 会让两个类产生一种关系  父类-子类<br>    父类：从子类中抽取出共同的属性和共同的方法，放到父类中，<br>    然后让子类继承父类，那子类就具有父类的属性和方法</p>
+<pre><code>继承的关键词：extends
+类的继承格式
+class 父类 {
+}
+
+class 子类 extends 父类 {
+}
+
+(1)父类中私有的属性和方法，子类是不能继承的
+(2)父类的构造方法，子类是不能继承的
+(3)父类是跨包的，除public以外的都不能被继承</code></pre><p>super 子类用来访问父类的方法或者属性<br>     super.方法    super.属性<br>     super()只能放在子类的构造方法中，并且只能放在第一行</p>
+<p>重写  子类重写父类的方法；<br>    方法名 +快捷键</p>
+<ol start="6">
+<li>多态,oop三大特征之一<br> 多态的优点<ol>
+<li>消除类型之间的耦合关系</li>
+<li>可替换性</li>
+<li>可扩充性</li>
+<li>接口性</li>
+<li>灵活性</li>
+<li>简化性<br>多态存在的三个必要条件<br>继承<br>重写<br>父类引用指向子类对象<br>向上转型<br>子类向父类的转换<br>&lt;父类型&gt; &lt;引用变量名&gt;=new&lt;子类型&gt;;<br>向下转型<br>父类型转换为子类型<br>&lt;子类型&gt;&lt;引用变量名&gt;=(&lt;子类型&gt;）&lt;父类型的引用变量&gt;;</li>
+</ol>
+</li>
+</ol>
+<ol start="7">
+<li>抽象</li>
+</ol>
+<p>(1)抽象  abstract<br>        abstract能修饰什么？类，方法<br>(2) 用abstract修饰类叫抽象类<br>            特点：抽象类不能被实例化，但能被继承</p>
+<p>(3)用abstract修饰的方法叫抽象方法<br>            特点：1.抽象方法没有方法体<br>                      2.抽象方法必须放在抽象类中，抽象类中的方法不一定是抽象方法<br>                      3.抽象类被子类继承后，那么子类要重写父类中的抽象方法，除非子类也是抽象类</p>
+<ol start="8">
+<li>访问权限<pre><code>private        (私有的)
+默认            (友好的)
+protected    (受保护的)
+public        (公共的)</code></pre></li>
+</ol>
+<p>9.final<br>     (1)final修饰类中的属性或者变量<br>           无论属性是基本类型还是引用类型，final所起的作用都是变量里面存放的“值”不能变。<br>     (2)final修饰类中的方法<br>           作用：可以被继承，但继承后不能被重写。<br>     (3)final修饰类<br>           作用：类不可以被继承。</p>
+<p>10.接口（重点）<br>        创建接口类   public interface<br>        接口的声明语法格式<br>         interface 接口名称 extends 其他的接口名 {<br>        // 声明变量<br>        // 抽象方法<br>    }<br>        接口关键字： interface<br>        类要实现接口：implements<br>    class 类名 extends 父类名 implements 接口，接口，…{<br>    //类成员<br>    }<br>        接口中的方法全是抽象方法<br>        接口中的方法全部要公开public<br>        接口不能被实例化<br>        接口可以被多实现<br>        接口中的属性全部是静态常量</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/13/第一篇博客/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Readers-are-welcome-to-browse" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
