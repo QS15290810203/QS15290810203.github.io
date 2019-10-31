@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>python知识点总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="MinHow,MinHow's Blog">
+  
+  <meta name="description" content="1、Python的两种编程方式：交互式（随输随运行）和文件式（主要方式；批量运行出结果） 2、一切皆对象，每个对象由标识（id()）、类型（type()）和值（print()）标识。 3、Python采用基于值的内存管理,不同变量赋值为同一个值，ID一样，但是只适用范围在-5至256的整数和短字符串。 4、内置函数（BIF），68个，查看方式：dir(builtins)分类：数值数据类型：int,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python知识点总结">
+<meta property="og:url" content="http://yoursite.com/2019/10/31/python知识点总结/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、Python的两种编程方式：交互式（随输随运行）和文件式（主要方式；批量运行出结果） 2、一切皆对象，每个对象由标识（id()）、类型（type()）和值（print()）标识。 3、Python采用基于值的内存管理,不同变量赋值为同一个值，ID一样，但是只适用范围在-5至256的整数和短字符串。 4、内置函数（BIF），68个，查看方式：dir(builtins)分类：数值数据类型：int,">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-31T09:48:18.950Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python知识点总结">
+<meta name="twitter:description" content="1、Python的两种编程方式：交互式（随输随运行）和文件式（主要方式；批量运行出结果） 2、一切皆对象，每个对象由标识（id()）、类型（type()）和值（print()）标识。 3、Python采用基于值的内存管理,不同变量赋值为同一个值，ID一样，但是只适用范围在-5至256的整数和短字符串。 4、内置函数（BIF），68个，查看方式：dir(builtins)分类：数值数据类型：int,">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">QS Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        QS Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注移动开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-python知识点总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      python知识点总结
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-10-31
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <p>1、Python的两种编程方式：交互式（随输随运行）和文件式（主要方式；批量运行出结果）</p>
+<p>2、一切皆对象，每个对象由标识（id()）、类型（type()）和值（print()）标识。</p>
+<p>3、Python采用基于值的内存管理,不同变量赋值为同一个值，ID一样，但是只适用范围在-5至256的整数和短字符串。</p>
+<p>4、内置函数（BIF），68个，查看方式：dir(builtins)<br>分类：<br>数值数据类型：int,float,complex,bool,decimal,fractions<br>序列数据类型：字符串（string）、列表（list）、元祖（tuple）、bytes、bytearray<br>集合数据类型：set、frozenset<br>字典数据类型：dict<br>不可变的数据类型：数值Number、字符串String、元祖Tuple<br>可变的数据类型：列表List、字典Dict、集合Set</p>
+<p>5、<br>二进制：0b/0B开头<br>八进制：0o/0O开头<br>十六进制;0x/0X开头</p>
+<p>6、<br>数值运算函数：<br>abs(x)：绝对值  ；divmod(x,y)：商余  ；pow(x,y,z)：幂余（(x**y)%z）   ；round(x,d)：四舍五入d位   ；max/min   ； int(x) /float(x) /complex(x)</p>
+<p>7、<br>math库：<br>常数：math.pi   ；math.fabs(x)：绝对值   ；math.fmod(x,y)：x%y ；math.ceil(x)：向上取整，返回不小于x的最小整数  ；math.floor(x)：向下取整，返回不大于x的最大整数  ；math.modf(x)：返回x的小数和整数部分  ；math.trunc(x)：返回x的整数部分</p>
+<p>8、<br>浮点数类型：0.1 + 0.2不等于 0.3 ，浮点数有小尾数。看是否等于可以用round（）函数帮助去小尾数。</p>
+<p>9、类型间混合运算：<br>整数 -&gt; 浮点数 -&gt; 复数</p>
+<p>10、布尔数据类型（bool）包含两个值-&gt;True（真–1）或假（False–0）。<br>如果表达式的结果为数值类型的0、空字符串（“”）、空元祖（）、空列表[]、空字典{}，则其布尔值为false（假），否则为true（真）。</p>
+<p>11、逻辑运算符：and、or、not<br>a and b等于a if not a else b   ； a or b 等于a if a else b。<br>not一定会返回true或false；and和or不一定。</p>
+<p>12、运算优先级（由高到低）<br>**（指数）&gt; +x.-x（正负号）&gt; *./.%（乘。除。取余）&gt; +. -（加。减）&gt; &amp;(与）&gt; ^（或）&gt; \（非）&gt;比较大小&gt; not（非）&gt; and（与）&gt;or（或）&gt; lambda表达式</p>
+<p>13、序列型数据<br>（1）序列的索引s[i]：如果索引下标越界，导致IndexError；如果索引下标不是整数，导致TypeError。<br>（2）序列的切片（截取序列s的一部分）：顾头不顾尾。<br>（3）序列的加：x + y：连接两个序列； 序列的乘（复制）：x * n：复制n次序列x ；<br>（4）判断子串：x in s ：返回True/False  ；   s.count(x)：返回x在s中出现的次数 ；   s.index(x,i,j)：返回x在s（范围[i,j]）中第一次出现的索引位置。<br>（5）序列的排序：sorted(s, key=None,reverse=False)。reverse为false是为升序，为true时为倒序。返回结果为一个列表。<br>（6）序列的拆封赋值：当变量个数和序列长度相等时，一一对应赋值。如a,b = (1,2)即a = 1,b = 2。不等则导致ValueError。或使用变量（将多个值作为整体赋给变量）或使用临时变量‘_’</p>
+<p>14、字符串类型</p>
+<p>比较字符ASCII码值的大小：空格&lt;数字&lt;大写字母&lt;小写字母<br>Unicode变字符：chr(u) ；字符变Unicode：ord(x)<br>format（）方法的格式控制：<br>（1）槽{序号}的使用<br>（2）{参数序号：格式控制标记}，格式控制标记包括：填充、对齐（分别用&lt;、&gt;、^表示左、右和居中对齐）、宽度、精度、类型（b=二进制，c=Unicode,d=十进制，o=八进制，xX=十六进制）。<br>（3）字符串的类型判断：<br>str.isdigit()是否全为数字（0-9）；str.isalpha()是否全为字母；str.isal num()是否全为数字或字母；str.isspace()是否是空白（空格、制表符、换行符等）；str.isprintable()是否可打印（空格和没有东西是可以被打印的）；str.isidentifier()是否满足标识符定义规则（字母或下划线开头，只含数字、字母和下划线）<br>（4）大小写转换：str.capitaiize()：转换为首字母大写，其余小写；str.title()各单词首字母大写。<br>（5）对齐：居中str.center(长度，填充物) ；左对齐：ljust ；右对齐：rjust。<br>填充：str.zfill(长度)相当于右对齐，前方补0。如果str前有正负号，则正负号也算长度，在正负号之后填充。<br>移除：左右两边：str.strip(字符chars) ； 左边：str.lstrip()  ；右边;rstrip（）<br>（6）字符串的查找：find和index<br>str.find(s):从左至右查找str中是否含s,有则返回第一次出现s的索引位置，否则返回-1<br>str.index（x）：从左至右查找是否含有x，有则返回第一次出现的索引位置，没有则抛出ValueError<br>str.rfind()和str.rindex()就是从右至左查找。<br>（7）字符串的替换：S.replace(old,new,count)。将S中的old替换为new，如果给定count，则只替换前count个old子串。<br>（8）拆分/分割：<br>S.split(分隔符sep,分割次数maxsplit), maxsplit = -1或不指定时，会从左向右搜索完整个字符串。S.rsplit()是从右往左。生成列表。<br>S.partition(sep)，S.rpartition(sep)(从右往左搜索)。搜索S中的子串sep，并从第一个sep处分割，返回一个包含三个元素的元组 –&gt;（sep左边的部分，sep，sep右边的部分）。如果搜索不到sep，则返回中有两个元素为空，partition是后两个元素为空，rpartition是前两个为空。<br>（9）连接组合：S.join（字符串对象）。 当对象为字符串字典时，结果是键的连接。</p>
+<p>15、列表类型</p>
+<p>列表list是可变对象，则对其增删改查不会改变其的id。除了list.copy().<br>方法：<br>（1）添加：<br>list.appand(x)：将元素x添加到列表的尾部；<br>list.extend(L)：将列表L中所有元素添加到列表的尾部；<br>list.insert(index,x)：在列表指定位置index处添加元素x；<br>（2）删除：<br>list.remove(x)：删除列表中首次出现的元素x；<br>list.pop(kediedai[index])：删除并返回指定位置的元素（可以理解为挖取出），list为空就抛IndexError异常；<br>list.clear()：删除列表中所有元素，但保留列表对象。<br>（3）排序：<br>list.reverse()：倒序；<br>list.sort()：排序（正或倒）；<br>（4）其他：<br>list.index(x)：返回值为x首次出现的下标；<br>list.count(x)：返回x的出现总次数；<br>list.copy() ：返回列表对象的浅拷贝。很厉害！！它可以改变列表的ID！<br><strong>浅拷贝——只拷贝一层。</strong>如果拷贝对象只有一层，那么同b = a[:]，两个变量相互独立的。但如果拷贝对象只有一层，就会有影响，会跟着改变。（详见例题）<br>！！列表推导式：<br>[新元素表达式 for 临时变量 in 可迭代对象 if 条件表达式]</p>
+<p>16、集合类型<br>集合中的元素没有顺序，且不重复。集合set是可变的，用大括号表示。<br>但是{}表示空字典；set()表示空集合，用set（）创建集合时，会将元素一个一个拆开，如’hello’变成’h’,‘e’,‘l’,‘l’,‘o’。<br>集合中元素要是固定数据类型：整数、浮点数、字符串、元组等。不可为可变的列表、字典、集合。<br>利用集合过滤掉重复的元素。<br>4种基本操作：交（&amp;）、并（|）、差（-）、补（^）<br>S.add() ;S.clear() ;S.copy() ; S.remove() ;len(S) ;x (not)in S ;<br>**S.pop()：随机返回S中的一个元素，如果S为空，产生KeyError.(区分list.pop([index]))<br>特有的：S.discard(X)；如果x在S中，移除x，不在，不报错。<br>主要三大用途：成员关系测试、元素去重、删除数据项。</p>
+<p>17、字典类型（映射）<br>{建（key）：值（value）}。键不能重复，且是不可变对象。值可变。元素没有顺序。<br>创建一个空字典：dict（） ；创建字典：dict(‘a’=1,‘b’=2)/dict(‘a’:1,‘b’:2)/dict((‘a’,1),(‘b’,2))<br>查找值：Dict[key]  ；修改键值：dict[key] = new_value  ；增添新键值：dict[new_key] = new_value .<br>D.keys()：返回所有键的列表,如dict_keys([‘a’, ‘b’, ‘c’])；<br>D.values()：返回所有值的列表,如dict_values([1, 2, 3])；<br>D.items()：返回所有的键值对的列表,如dict_items([(‘a’, 1), (‘b’, 2), (‘c’, 3)])；<br>D.get(key,v)：键存在则返回相应值，否则返回None（自定义了v时，返回v的内容）;<br>D.pop(key.value)：键存在则返回相应值，同时删除键值对，否则返回None；<br>D.popitem()：随机取出一个键值对，以元组（key，value）形式返回；<br>D.setdefault(k,v)：如果键k存在，返回对应值，否则添加项目k = v,v默认为None；<br>D.update(dict)：更新或添加键值对；<br>D.clear()：删除所有的键值对；<br>del.D[key]：删除key对应的键值对。如果key不存在，则抛出KeyError。   遍历：<br>for 变量名 in 字典名：</p>
+<p>18、可变与不可变（关于值）<br>可变：列表（有序）、集合（无序）、字典（无序）<br>不可变：字符串（有序）、元组（有序）<br>Python是基于值的内存管理方式，举例：a=[1,2,3],b=[1,2,3]，a==b成立。  但是id(a)与id(b)不相等，id(a[0])==id(b[0])成立。总结就是关乎值的就相等<br>什么叫可变？即值是可变的，但id是固定不变的。例如可变的列表，修改列表L中的一个元素的值，列表L的id是不变的。<br>不管是可变还是不可变的序列类型：<br>（1）分片必定产生新的序列；<br>（2）“+”号在等号右边（L=L+[i]），必定产生新的序列。然后将新的序列地址赋予给等号左边的变量。（每一次执行时都会将原列表复制一次，L指向新列表，并在新列表中加入新元素）<br>对三种列表添加方法进行总结：<br>（1）L=L+[i]在每一次执行时都会将原列表复制一次，L指向新列表，并在新列表中加入新元素。<br>（2）L.append(i)只是将新元素直接添加到原列表中，不会产生新列表。<br>（3）L+=[i]的执行效果和L.append(i)类似，也是在原列表中直接添加元素，不会复制原列表。<br>b = a VS b = a[:]<br>b = a时，b就是跟着a变化，并且a与b的id一样。b = a[:]时，b与a是独立的整体，id就不同，只不过指向了同一个值。对a做修改（增删改查），对b没有影响。</p>
+<p>19、程序的三种基本结构：<br>顺序结构、·分支结构（if-else、elif）、·循环结构（遍历：for…in、条件：while。循环控制：break/continue）。<br>异常值处理：try-except。<br>二分支结构简单语法：表达式1 if 条件 else 表达式2<br>循环结构分遍历循环（for）和无限循环（while）：<br>遍历循环：for 循环变量 in 遍历结构：语句块（从遍历结构逐一提取元素，放在循环变量中，对每一个提取出的元素执行一次语句块。）<br>无限循环：while 条件：语句块。判断条件为True就一直循环，为false时魂环结束，执行与while同级别缩进的后续语句。<br>break用于结束当前循环，如果有两层循环，break用于跳出最内层for或while循环，脱离该循环后程序从循环后代码继续执行；<br>continue用来结束当前循环的当次循环过程，即跳出循环体中下面尚未执行的语句，但不跳出当前循环。<br>当有输入要求时，可运用异常值处理try：except：</p>
+<p>20、函数<br>（1）形参与实参：定义函数时的参数是形参，调用函数时的参数是实参。<br>（2）参数传递的方法：位置参数、默认值参数、关键字参数、命名关键字参数。。。<br>位置参数：按位置顺序传递参数值，位置参数要在所有参数之前，是第一个参数；<br>关键字参数：关键字参数就是在调用函数，传入实参时指定形参的变量名。关键字不用遵守位置的对应关系。参数之间的顺序可以任意调整。关键字传递可以和位置传递混用。但位置参数要在关键字参数之前。举例：def hello(name,age = 11,gender = ‘F’):（age = 11,gender = ‘F’就是关键字参数）<br>。举例：def hello(name,age = 11,gender = ‘F’):（age = 11,gender = ‘F’就是关键字参数）<br>默认值参数：定义参数时已经给定值，一般参数为不可变对象，（如果为可变的空列表，可用于装位置参数）；<br>可变数量参数：<em>args、<strong>kw<br>带有星号<em>的可变参数只能出现在参数列表的后面。调用时，</em>参数被当作元组类型传递到函数中。(如： def func(*args): -&gt; func(10,20))<br>带双星号（</strong>）的参数，在使用时必须指定参数值，使用key=value这种形式，只能出现在参数列表的最后。调用时，<strong>kw后的那些参数被当作字典类型传递到函数中。（如：def func(</strong>kw): -&gt; func(a=10,b=20)）<br>强制命名参数：参数带星号或者就是一个星号（def f(*c或</em>,a,b,c)），强制命令参数<em>c 的含义是它后面的参数必须用实名调用，即必须用 a = … , b = … 来调用，不能只写值。<br>Python中只有函数，函数是有返回值的，*</em>如果没有return，默认返回None。**return返回多个值时，多个值以元组形式保存。</p>
+<p>21、比较<br>（1）list.sort（）与全局sorted（）<br>list.sort(key = None,reverse = False)是列表内置排序方法。但其返回值为None（x.sort()的结果、print（x.sort()）、x = x.sort()后x的结果都是None）,只有当文字说“执行语句x.sort（），x的值为”，x.sort（）作用的结果，需要通过打印被作用的列表才可以查看结果。true是倒序，false是正序。<br>sorted（）：Python内置方法。返回新的列表。<br>（2）list.reverse（）和reversed（）<br>list.reverse()返回的是None，其作用的结果，需要通过打印被作用的列表才可以查看结果。<br>reversed()：内置方法。经过reversed（）作用之后，返回的是一个吧序列值经过倒序的迭代器，所以，需要通过遍历或list、tuple或next（）方法，才能获得作用后的值。<br>（3）字符串的查找：find和index<br>str.find(s):从左至右查找str中是否含s,有则返回第一次出现s的索引位置，否则返回-1<br>str.index（x）：从左至右查找是否含有x，有则返回第一次出现的索引位置，没有则抛出ValueError<br>str.rfind()和str.rindex()就是从右至左查找。</p>
+<p>22、函数变量的作用域<br>（1）局部变量、全局变量、global<br>global：用于在函数中直接修改全局变量的值。<br>（2）内嵌函数<br>内嵌函数的作用域仅限其所在的函数体内。如果要在内部函数中修改外部函数中的局部变量的值，使用nonlocal关键字。</p>
+<h3 id="END"><a href="#END" class="headerlink" title="END"></a>END</h3>
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年10月31日 17:48</p>
+        <p>原始链接： <a class="post-url" href="/2019/10/31/python知识点总结/" title="python知识点总结">http://yoursite.com/2019/10/31/python知识点总结/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="John Doe">
+                John Doe
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/10/31/python知识点总结/&title=《python知识点总结》 — Hexo&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/10/31/python知识点总结/&title=《python知识点总结》 — Hexo&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/10/31/python知识点总结/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python知识点总结》 — Hexo&url=http://yoursite.com/2019/10/31/python知识点总结/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/10/31/python知识点总结/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/10/31/python知识点总结/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#END"><span class="post-toc-text">END</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/31/JDK安装步骤/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">JDK安装步骤</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 John Doe<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
