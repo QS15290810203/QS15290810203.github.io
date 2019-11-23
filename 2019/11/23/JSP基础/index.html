@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>JSP基础 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="MinHow,MinHow's Blog">
+  
+  <meta name="description" content="一、什么是JSP　　JSP是由Sun公司倡导、许多公司参与而建立的动态网页技术标准。它在HTML代码中嵌入java代码片段（Scriptlet）和JSP标签，构成了JSP网页。在接收到用户请求时，服务器会处理java代码片段，然后生成处理结果的HTML页面返回给客户端，客户端的浏览器将呈现最终页面效果。 二、JSP技术特征　　1、跨平台　　2、业务代码分离　　3、组件重用（javabean）　　4">
+<meta name="keywords" content="writer:QS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSP基础">
+<meta property="og:url" content="http://yoursite.com/2019/11/23/JSP基础/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、什么是JSP　　JSP是由Sun公司倡导、许多公司参与而建立的动态网页技术标准。它在HTML代码中嵌入java代码片段（Scriptlet）和JSP标签，构成了JSP网页。在接收到用户请求时，服务器会处理java代码片段，然后生成处理结果的HTML页面返回给客户端，客户端的浏览器将呈现最终页面效果。 二、JSP技术特征　　1、跨平台　　2、业务代码分离　　3、组件重用（javabean）　　4">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-23T07:28:33.671Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JSP基础">
+<meta name="twitter:description" content="一、什么是JSP　　JSP是由Sun公司倡导、许多公司参与而建立的动态网页技术标准。它在HTML代码中嵌入java代码片段（Scriptlet）和JSP标签，构成了JSP网页。在接收到用户请求时，服务器会处理java代码片段，然后生成处理结果的HTML页面返回给客户端，客户端的浏览器将呈现最终页面效果。 二、JSP技术特征　　1、跨平台　　2、业务代码分离　　3、组件重用（javabean）　　4">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">QS Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        QS Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注移动开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-JSP基础" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      JSP基础
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-11-23
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="一、什么是JSP"><a href="#一、什么是JSP" class="headerlink" title="一、什么是JSP"></a>一、什么是JSP</h3><p>　　JSP是由Sun公司倡导、许多公司参与而建立的动态网页技术标准。它在HTML代码中嵌入java代码片段（Scriptlet）和JSP标签，构成了JSP网页。在接收到用户请求时，服务器会处理java代码片段，然后生成处理结果的HTML页面返回给客户端，客户端的浏览器将呈现最终页面效果。</p>
+<h3 id="二、JSP技术特征"><a href="#二、JSP技术特征" class="headerlink" title="二、JSP技术特征"></a>二、JSP技术特征</h3><p>　　1、跨平台<br>　　2、业务代码分离<br>　　3、组件重用（javabean）<br>　　4、继承 Java Servlet功能<br>　　5、预编译</p>
+<h3 id="三、page指令"><a href="#三、page指令" class="headerlink" title="三、page指令"></a>三、page指令</h3><p>1、language属性</p>
+<p>　　用于设置JSP页面使用的语言，目前只支持java语言，以后可能会支持其他语言，该属性默认值是java</p>
+<p>2、extends属性</p>
+<p>　　用于设置 JSP页面继承的 Java类，所有 JSP页面在执行之前都会被服务器解析成 Servlet,而 Servlet是由 Java类定义的，所以 JSP和 Servlet都可以继承指定的父类。该属性并不常用，而且有可能影响服务器的性能优化。</p>
+<p>3、import 属性</p>
+<p>　　用于设置 JSP导入的类包。JSP 页面可以嵌入 java代码片段，这些java代码在调用 API时需要导入相应的类包。</p>
+<p>4、pageEncoding属性</p>
+<p>　　用于定义 JSP页面的编码格式，也就是指的文件编码。 JSP页面中的所有代码都使用该属性指的的字符集，如果该数据值为ISO-8859-1，那么这个jsp页面就不支持中文字符。通常设置编码格式为 GBK 或 UTF-8</p>
+<p>5、contentType属性</p>
+<p>　　用于设置 JSP 页面的 MIME类型和字符编码，浏览去会据此显示网页内容。</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;  </p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><p>  </p>
+<html>  
+<head><meta name="generator" content="Hexo 3.9.0">  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<title>Insert title here</title>  
+</head>  
+<body>  
+    这是我保存的jsp页面  
+</body>  
+</html>  12345678910111213
+
+
+
+<h3 id="四、include指令"><a href="#四、include指令" class="headerlink" title="四、include指令"></a>四、include指令</h3><p>　　该指令用于文件包含。该指令可以在 JSP页面中包含另一个文件的内容，但是它仅仅支持静态包含，也就是说被包含文件中的所有内容都被原样包含到该 JSP 页面中；如果被包含文件中有代码，将不被执行。被包含的文件可以是一段java代码、HTML代码或者是另一个 jsp页面。</p>
+<p>一个index.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;  </p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><p>  </p>
+<html>  
+<head><meta name="generator" content="Hexo 3.9.0">  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<title>Insert title here</title>  
+</head>  
+<body>  
+    当前的日期是：  
+    <%@ include file="date.jsp" %>>  
+</%@></body>  
+</html>  1234567891011121314
+
+<p>一个date.jsp</p>
+<p>&lt;%@ page import=”java.util.Date” %&gt;<br>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;<br>&lt;%<br>    Date now=new Date();  </p>
+<pre><code>String dateStr;  
+dateStr=String.format(&quot;%tY年%tm月%td日&quot;, now, now,now);  </code></pre><p>%&gt;  </p>
+<p>&lt;%=dateStr %&gt;  1234567891011</p>
+<h3 id="五、taglib指令"><a href="#五、taglib指令" class="headerlink" title="五、taglib指令"></a>五、taglib指令</h3><p>　　该指令用于加载用户自定义标签，使用该指令加载后的标签可以直接在 JSP 页面中使用。其语法格式为：</p>
+<pre><code>&lt;%@ taglib prefix=&quot;view&quot; uri=&quot;/WEB-INF/tags/view.tld&quot;&gt;  1</code></pre><h3 id="六、java代码块"><a href="#六、java代码块" class="headerlink" title="六、java代码块"></a>六、java代码块</h3><p>实现九九乘法表</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <% long starttime="System.nanoTime();" for(int i="1;i<=9;i++){" j="1;j<=i;j++){" string str="j+" x"+i+"="+(i*j);" out.print(str+"&nbsp"); } out.print("<br>");
+
+<pre><code>    }
+    long endTime=System.nanoTime()-startTime;
+    /* out.println(endTime); */
+%&gt;
+生成九九乘法表，用时&lt;% out.println(endTime/1000);%&gt;毫秒</code></pre></%></body>
+</html>1234567891011121314151617181920212223242526
+
+
+
+<h3 id="七、JSP表达式"><a href="#七、JSP表达式" class="headerlink" title="七、JSP表达式"></a>七、JSP表达式</h3><p>　　JSP表达式可以直接把JAVA的表达式结果输出到JSP页面中。表达式的最终运算结果将被转换为字符串类型，因为在网页中显示的文字都是字符串，JSP表达式的语法格式为：（比如圆周率）</p>
+<p>&lt;%= Math.PI%&gt;1</p>
+<p>具体实例代码：</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;</p>
+<p> &lt;%– 在java中定义一个方法&lt;%! 方法实现 %&gt; –%&gt;<br>&lt;%!<br>    public String add(int a,int b){<br>        return “”+(a+b);<br>    }</p>
+<p>%&gt;   </p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    圆周率是:<%=math.pi%>
+    <br>
+
+<pre><code>&lt;!-- 将上述的方法显示在页面中 --&gt;
+&lt;%String sum=add(10,20); %&gt;
+&lt;input type=&quot;text&quot; value=&quot;&lt;%=sum %&gt;&quot;&gt;</code></pre></%=math.pi%></body>
+</html>123456789101112131415161718192021222324252627
+
+<p>运算结果为： </p>
+<h3 id="八、获取请求参数值"><a href="#八、获取请求参数值" class="headerlink" title="八、获取请求参数值"></a>八、获取请求参数值</h3><p>语法：</p>
+<p>String request.getParameter(String parameter)1</p>
+<p>实例演示：从show.jsp获取index.jsp页面中的id值<br>index.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <a href="show.jsp?id=001">获取id的值</a>
+</body>
+</html>12345678910111213
+
+<p>show.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;<br><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></p>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ id的值为：<%=request.getparameter("id") %>
+ <br>
+ name的值为：<%=request.getparameter("name") %>
+</%=request.getparameter("name")></%=request.getparameter("id")></body>
+</html>1234567891011121314
+
+<p>运行结果为：<br>    　　id的值为：001<br>　　name的值为：null</p>
+<h3 id="九、获取Form表单信息"><a href="#九、获取Form表单信息" class="headerlink" title="九、获取Form表单信息"></a>九、获取Form表单信息</h3><p>语法</p>
+<p>String[] request.getParameterValues(String parameter)1</p>
+<p>具体实例演示<br>index.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <form action="show.jsp" method="post">
+        请输入用户姓名：<input type="text" name="name"><br>
+        选择性别：<input type="radio" value="男" name="sex">男
+        <input type="radio" value="女" name="sex">女
+        <br>
+        密码提示问题
+        <select name="question">
+            <option value="母亲的生日">母亲的生日</option>
+            <option value="父亲的名字">父亲的名字</option>
+        </select>
+        <br>
+        请输入问题答案：<input type="text" name="key"><br>
+        请选择个人爱好：
+        <input type="checkbox" value="唱歌跳舞" name="like">唱歌跳舞
+        <input type="checkbox" value="户外登山" name="like">户外登山
+        <input type="checkbox" value="网上冲浪" name="like">网上冲浪
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>12345678910111213141516171819202122232425262728293031
+
+<p>show.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;<br><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></p>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+用户名：<%=new string(request.getparameter("name").getbytes("iso8859_1"),"utf-8") %><!-- 就是你从request获取的的name是使用ISO8859-1编码的，你想用utf-8重新编码，主要是为了避免乱码问题 -->
+<br>
+性别：<%=new string(request.getparameter("sex").getbytes("iso8859_1"),"utf-8") %>
+<br>
+密码提示问题：<%=new string(request.getparameter("question").getbytes("iso8859_1"),"utf-8") %>
+<br>
+问题答案：<%=new string(request.getparameter("key").getbytes("iso8859_1"),"utf-8") %>
+<br>
+个人爱好：<% string[] like="request.getParameterValues(" like");" for(int i="0;i<like.length;i++){" %>
+        <%=new string(like[i].getbytes("iso8859_1"),"utf-8")%>
+        <% } %>
+
+</%></%=new></%></%=new></%=new></%=new></%=new></body>
+</html>12345678910111213141516171819202122232425262728
+
+<p>运行结果为：<br>　　<br>点击提交按钮之后： 
+  　　</p>
+<h3 id="十、获取请求客户端信息"><a href="#十、获取请求客户端信息" class="headerlink" title="十、获取请求客户端信息"></a>十、获取请求客户端信息</h3><p>request对象获取请求客户端信息</p>
+<p>  方法<br>  返回值<br>  说明</p>
+<p>  getHeader(String name)<br>  String<br>  返回指定名称的Http头信息</p>
+<p>  getMethod()<br>  String<br>  获取客户端服务器发送请求的方法</p>
+<p>  getContextPath()<br>  String<br>  返回请求路径</p>
+<p>  getProtocol()<br>  String<br>  返回请求使用的协议</p>
+<p>  getRemoteAddr()<br>  String<br>  返回客户端地址</p>
+<p>  getRemoteHost()<br>  String<br>  返回客户端主机名称</p>
+<p>  getRemotePort()<br>  int<br>  返回客户端发出请求的端口号</p>
+<p>  getServletPath()<br>  String<br>  返回接受客户提交信息的页面</p>
+<p>  getRequestURI()<br>  String<br>  返回部分客户端请求的地址，不包括请求的参数</p>
+<p>  getRequestURL()<br>  StringBuffer<br>  返回客户端请求地址</p>
+<p>实例演示：<br>创建客户端client.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;<br><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></p>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <ul>
+        <li>客户端使用协议：<%=request.getprotocol() %>
+        <li>客户端发送请求方法：<%=request.getmethod() %>
+        <li>客户端请求路径：<%=request.getcontextpath() %>
+        <li>客户端IP地址：<%=request.getremoteaddr() %>
+        <li>客户端主机名称：<%=request.getremotehost() %>
+        <li>客户端端口号：<%=request.getremoteport() %>
+        <li>接收客户信息的页面：<%=request.getservletpath() %>
+    </%=request.getservletpath()></li></%=request.getremoteport()></li></%=request.getremotehost()></li></%=request.getremoteaddr()></li></%=request.getcontextpath()></li></%=request.getmethod()></li></%=request.getprotocol()></li></ul>
+</body>
+</html>1234567891011121314151617181920
+
+<p>运行结果为：<br>　　客户端使用协议：HTTP/1.1<br>　　客户端发送请求方法：GET<br>　　客户端请求路径：/MyWebTest<br>　　客户端IP地址：0:0:0:0:0:0:0:1<br>　　客户端主机名称：0:0:0:0:0:0:0:1<br>　　客户端端口号：4999<br>　　接收客户信息的页面：/index.jsp</p>
+<p>　</p>
+<h3 id="十一、在作用域中管理属性"><a href="#十一、在作用域中管理属性" class="headerlink" title="十一、在作用域中管理属性"></a>十一、在作用域中管理属性</h3><p>request对象在作用域中管理属性<br>　　语法</p>
+<p>Object request.setAttribute(String name,Object value)　　1</p>
+<p>比如：<br>　　request.setAttribute(“date”,new Date());//添加一个属性</p>
+<p>演示代码：</p>
+<p>&lt;%@ page import=”java.util.Date” %&gt;<br>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <%request.setattribute("date", new date()); %>
+    <ul>
+        <li>获取date属性：<%=request.getattribute("date") %>
+        <br>
+        <!-- 删除date属性 -->
+        <%request.removeattribute("date"); %>
+        <li>删除之后获取date属性：<%=request.getattribute("date") %>
+    </%=request.getattribute("date")></li></%request.removeattribute("date");></%=request.getattribute("date")></li></ul>
+
+</%request.setattribute("date",></body>
+</html>12345678910111213141516171819202122
+
+<p>运行结果为：<br>　　获取date属性：Sun May 20 10:10:39 CST 2018<br>　　删除之后获取date属性：null</p>
+<h3 id="十二、cookie管理"><a href="#十二、cookie管理" class="headerlink" title="十二、cookie管理"></a>十二、cookie管理</h3><p>　　cookie是小段的文本信息，通过使用cookie可以标识用户身份、记录用户名及密码、跟踪重复用户。cookie在服务器生成并发送给浏览器，浏览器将cookie的key/value保存到某个指定的目录中，服务器的名称与值可以有服务器端定义。<br>　　通过cookie的getCookies()方法可以获取到所有的cookie对象集合，然后通过cookie对象的getName()方法获取到指定名称的cookie，再通过getValue()方法即可获取到cookie对象的值。另外，将一个cookie对象发送到客户端使用了response对象的addCookie()方法。</p>
+<p>实例演示：<br>　　在index.jsp中读取cookie，在show.jsp中添加cookie<br>index.jsp</p>
+<p>&lt;%@ page import=”java.util.Date” %&gt;<br>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <!-- 读取cookie -->
+    <% string welcome="第一次访问" ; string[] info="new" string[]{"","",""}; cookie[] cook="request.getCookies();" if(cook!="null){" for(int i="0;i<cook.length;i++){" if(cook[i].getname().endswith("abccookinfo")){ } %>
+    <!-- 打印用户信息 -->
+    <%=info[0]+welcome %>
+
+<pre><code>&lt;!-- 表单信息 --&gt;
+&lt;form action=&quot;show.jsp&quot; method=&quot;post&quot;&gt;
+    姓名：&lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&lt;%=info[0] %&gt;&quot;/&gt;&lt;br&gt;
+    生日：&lt;input type=&quot;text&quot; name=&quot;birthday&quot; value=&quot;&lt;%=info[1] %&gt;&quot;/&gt;&lt;br&gt;
+    邮箱：&lt;input type=&quot;text&quot; name=&quot;email&quot; value=&quot;&lt;%=info[2] %&gt;&quot;/&gt;&lt;br&gt;
+
+    &lt;input type=&quot;submit&quot;  value=&quot;提交&quot;/&gt;
+&lt;/form&gt;</code></pre></%=info[0]+welcome></%></body>
+</html>1234567891011121314151617181920212223242526272829303132333435363738
+
+<p>show.jsp</p>
+<p>&lt;%@ page language=”java” contentType=”text/html; charset=UTF-8”<br>    pageEncoding=”UTF-8”%&gt;<br><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"></p>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <% string name="request.getParameter(" name");" birthday="request.getParameter(" birthday");" email="request.getParameter(" email");" <pre><code>/* 将这三个值写到cookie里,也即是添加cookie*/
+Cookie myCookie=new Cookie(&quot;abcCookInfo&quot;,name+&quot;#&quot;+birthday+&quot;#&quot;+email);
+response.addCookie(myCookie);</code><p> %&gt;<br>    <ul><br>        <li>姓名：&lt;%=name %&gt;<br>        </li><li>生日：&lt;%=birthday %&gt;<br>        </li><li>邮箱：&lt;%=email %&gt;<br>        </li><li><a href="index.jsp">返回</a><br>    </li></ul></p>
+</%></body>
+</html>1234567891011121314151617181920212223242526
+
+<p>运行结果为： </p>
+<h3 id="十三、response对象"><a href="#十三、response对象" class="headerlink" title="十三、response对象"></a>十三、response对象</h3><p>response对象常用方法</p>
+<p>  方法<br>  返回值<br>  说明</p>
+<p>  addHeader(String name,String value)<br>  void<br>  添加HTTP文件头，如果同名的头存在，则覆盖</p>
+<p>  setHeader(String name,String value)<br>  void<br>  设定指定名称的文件并头的值，如果存在则覆盖</p>
+<p>  addCookie(Cookie cookie)<br>  void<br>  向客户端添加一个cookie对象</p>
+<p>  sendError(int sc,String msg)<br>  void<br>  向客户端发送错误信息。例如：404网页找不到</p>
+<p>  sendRedirect(String location)<br>  void<br>  发送请求到另一个指定位置</p>
+<p>  getOutputStream()<br>  ServletOutputStream<br>  获取客户端输出流对象</p>
+<p>  setBufferSize(int size)<br>  void<br>  设置缓冲区大小</p>
+<p>1、重定向<br>　　重定向是通过使用sendRedrect()方法，将响应发送到另一个指定的位置进行处理</p>
+<p>　　比如：<br>　　　　response.sendRedirect(“<a href="http://www.baidu.com”" target="_blank" rel="noopener">www.baidu.com”</a>);<br>2、处理HTTP文件头<br>　　setHeader()方法通过两个参数–头名称与参数值的方法来设置HTTP头文件。<br>　　比如：</p>
+<p>设置网页每5秒自动刷新一次<br>response.setHeader(“refresh”,”5”);<br>设置2秒钟后自动跳转至指定的页面<br>response.setHeader(“refresh”,”2;URL=welcom.jsp”);1234</p>
+<h3 id="十四、session对象"><a href="#十四、session对象" class="headerlink" title="十四、session对象"></a>十四、session对象</h3><p>　　session是与请求有关的会话对象，是java.servlet.http.HttpSession对象，用于保存和存储页面的请求信息。<br>　　session对象的setAttribute()方法可以实现将信息保存在session范围内，而通过getAttribute()方法可以获取保存在session范围内的信息。<br>示例：</p>
+<p>String sessionMessage=”session练习”;<br>session.setAttribute(“message”,sessionMessage);</p>
+<p>String message=(String)session.getAttribute(“message”);<br>out.print(“保存在session范围内的值为：”+message);123456</p>
+<p>移除指定的绑定对象<br>　　removeAttribute(String key)<br>　　<br>销毁session<br>　　session.invalidate();</p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年11月23日 15:28</p>
+        <p>原始链接： <a class="post-url" href="/2019/11/23/JSP基础/" title="JSP基础">http://yoursite.com/2019/11/23/JSP基础/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="John Doe">
+                John Doe
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/11/23/JSP基础/&title=《JSP基础》 — Hexo&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/11/23/JSP基础/&title=《JSP基础》 — Hexo&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/11/23/JSP基础/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JSP基础》 — Hexo&url=http://yoursite.com/2019/11/23/JSP基础/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/11/23/JSP基础/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/11/23/JSP基础/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/writer:QS/" class="color5">writer:QS</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、什么是JSP"><span class="post-toc-text">一、什么是JSP</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、JSP技术特征"><span class="post-toc-text">二、JSP技术特征</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、page指令"><span class="post-toc-text">三、page指令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四、include指令"><span class="post-toc-text">四、include指令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#五、taglib指令"><span class="post-toc-text">五、taglib指令</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#六、java代码块"><span class="post-toc-text">六、java代码块</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#七、JSP表达式"><span class="post-toc-text">七、JSP表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#八、获取请求参数值"><span class="post-toc-text">八、获取请求参数值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#九、获取Form表单信息"><span class="post-toc-text">九、获取Form表单信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#十、获取请求客户端信息"><span class="post-toc-text">十、获取请求客户端信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#十一、在作用域中管理属性"><span class="post-toc-text">十一、在作用域中管理属性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#十二、cookie管理"><span class="post-toc-text">十二、cookie管理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#十三、response对象"><span class="post-toc-text">十三、response对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#十四、session对象"><span class="post-toc-text">十四、session对象</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/23/python贪吃蛇/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">python贪吃蛇</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 John Doe<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/writer-QS/" style="font-size: 10px;">writer:QS</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/writer-QS/" style="font-size: 10px;">writer:QS</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
