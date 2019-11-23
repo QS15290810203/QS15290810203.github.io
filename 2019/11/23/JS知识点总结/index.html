@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>JS知识点总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="MinHow,MinHow's Blog">
+  
+  <meta name="description" content="js知识点总结组成ECMAscript  基础语法     变量 数据类型 运算符 数组 函数 对象BOM 浏览器对象模型     window对象（获取浏览器宽高）     history对象     location对象DOM 文档对象模型   轮播图   元素获取  操作属性   操作样式  节点   事件  时间对象作用：（运营在用户端浏览器）  数据验证  动态创建和删除元素  操作元素">
+<meta name="keywords" content="writer:QS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS知识点总结">
+<meta property="og:url" content="http://yoursite.com/2019/11/23/JS知识点总结/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="js知识点总结组成ECMAscript  基础语法     变量 数据类型 运算符 数组 函数 对象BOM 浏览器对象模型     window对象（获取浏览器宽高）     history对象     location对象DOM 文档对象模型   轮播图   元素获取  操作属性   操作样式  节点   事件  时间对象作用：（运营在用户端浏览器）  数据验证  动态创建和删除元素  操作元素">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-23T05:32:53.626Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS知识点总结">
+<meta name="twitter:description" content="js知识点总结组成ECMAscript  基础语法     变量 数据类型 运算符 数组 函数 对象BOM 浏览器对象模型     window对象（获取浏览器宽高）     history对象     location对象DOM 文档对象模型   轮播图   元素获取  操作属性   操作样式  节点   事件  时间对象作用：（运营在用户端浏览器）  数据验证  动态创建和删除元素  操作元素">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">QS Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        QS Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注移动开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/huangminhow">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-JS知识点总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      JS知识点总结
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2019-11-23
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="js知识点总结"><a href="#js知识点总结" class="headerlink" title="js知识点总结"></a>js知识点总结</h3><p>组成<br>ECMAscript  基础语法<br>     变量 数据类型 运算符 数组 函数 对象<br>BOM 浏览器对象模型<br>     window对象（获取浏览器宽高）<br>     history对象<br>     location对象<br>DOM 文档对象模型   轮播图<br>   元素获取  操作属性   操作样式  节点   事件  时间对象<br>作用：（运营在用户端浏览器）</p>
+<ol>
+<li><p>数据验证</p>
+</li>
+<li><p>动态创建和删除元素</p>
+</li>
+<li><p>操作元素的内容和样式</p>
+</li>
+<li><p>模拟动画</p>
+</li>
+<li><p>创建cookie</p>
+</li>
+<li><p>ajax 请求数据<br>。。。。。。</p>
+</li>
+<li><p>JSON格式的数据处理 *<br>特征：面向对象</p>
+</li>
+<li><p>基于[对象]和[事件驱动]的松散型  解释型语言</p>
+</li>
+<li><p>客户端脚本语言，实现用户交互</p>
+</li>
+</ol>
+<p>BOM： 浏览器对象模型<br>完成窗口与窗口之间的通信，window对象是其核心对象，<br>history【前进，后退，刷新】 是一个对象 使用【window.history】<br>location【地址】<br>DOM【】<br>screen【屏幕】<br>frames[真窗口]<br>navigation<br>window对象：<br>属性<br>1-1：获取浏览器宽高<br>a.ie8及以上<br>    window.innerWidth   [获取浏览器宽度]<br>    window.innerHeight  [获取浏览器高度]<br>b.ie8以下<br>    document.documentElement.ClientWidth [宽度]<br>    document.documentElement.ClientHeight   【高度】<br>1-2： 重新获取浏览器宽高</p>
+<p>window.onreset=function () {<br>    NewW=window.innerWidth;<br>    NewH=window.innerHeight;<br>}<br>1-3：重新设置浏览器大小<br>​ window.onresize=function（）{<br>​ }<br>1-4：浏览器滚动事件<br>​ window.onscroll=function （）{<br>​ }<br>2.浏览器左上角距离屏幕左上角的偏移量</p>
+<p>window.screenTop   [垂直偏移量]<br>window.screenLeft   [水平偏移量]<br>注意：<br>因为window是核心，可以省略window不写<br>方法<br>alert() 弹出框<br>prompt() 输入框<br>confirm() 提示框，返回true或flase<br>close() 关闭页面<br>open(“url”) 打开页面（“打开的页面的路径【根据本html位置的相对路径】”）</p>
+<p>open(“url”,””,”width=300,height=200”);<br>setInterval（fn，毫秒数）：隔毫秒数重复不断的执行一个函数fn<br>方法1<br>    let t =setInterval(fn,3000)<br>    function fn(){<br>​<br>    }<br>方法2<br>    setInterval(function(){<br>​<br>    },1000)<br>clearInterval（t）：清除setInterval的时间函数</p>
+<p>let t =setInterval(fn,3000)<br>function fn(){</p>
+<p>}<br>clearInterval（t）<br>setTimeout（fn，1000） 隔一定的时间只执行一次函数<br>cleanTimeout（t） 清除时间函数 【用法同上】<br>获取表单的值</p>
+<p>对象.value=<br>​<br>清空=“”<br>history对象<br>属性：<br>history.length 用来显示历史记录的长度<br>方法<br>history.forward() 前进<br>history.back()后退<br>history.go(0) 刷新 【1 前进，-1后退；不常用】<br>location对象<br>属性：设计获取当前页面的地址<br>location.href=“ ” 设置或获取页面地址 设置新值<br>location.host：主机名+端口号<br>location.hostname：主机名<br>location.port：端口号<br>location.protocol：协议<br>location.pathname： 路径<br>location.search： ？后面的查询【搜索】字段<br>方法<br>location.reload( ) 重新加载<br>location.replace（”网页.html”） 页面替换，不会增加历史记录<br>location.assign（“网页.html”） 页面替换， 能够增加历史记录</p>
+<p>DOM（文档对象模型）document object model<br>获取元素<br>获取body：document.body<br>获取html：document.documentElement</p>
+<ol>
+<li>获取id名的元素：<br>let 变量=document.getElementById(“id名”)<br> 例子： let box=document.getElementById(“id名”)</li>
+<li>获取class名的元素[得到的是集合，可以通过键名访问]</li>
+</ol>
+<p>let 对象=document.getElementsByClassName（“class名”）<br>    通过遍历改变样式<br>集合通过单个下表改变，不能全部用class名同时改变<br>3. 获取标签名的元素[得到的是集合，可以通过键名访问]</p>
+<p>let 对象=document.getElementsByTagName（“标签名”）<br>4.给对象加类</p>
+<p>标签加1个类名<br>    对象.className=“类名”<br>div加多个类名<br>    对象.className=“类名1 类名2 ”<br>5.指定范围的多层级获取【集合】</p>
+<div class="box">
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</div>
+​
+多楼层获取
+let box=document.getElementClassName("box");
+let box1=box.getElementClassName("box1");
+let box2=box1.getElementClassName("box2")
+6.获取选择器选中的元素
+
+<p>let liss=document.querySelector(“【选择器】”);   获取选择器选中的第一个元素<br>let lis=document.querySelectorAll(“【选择器】”); 获取选择器选中的全部元素【集合】【下标或者foreach遍历】<br>7.属性选择器</p>
+<p> <textarea name="con" id="text" cols="30" rows="10"></textarea><br>let con = document.querySelector(“[name=con]”)<br>操作样式<br>获取样式<br>获取行内样式</p>
+<p>对象.style.样式名<br>获取通用的样式【css和行内】</p>
+<p>getComputedStyle(对象,null).样式名<br>设置行内样式</p>
+<p>对象.style.样式名=“样式值”<br>对象.style=“background：red；border-radius：50%”<br>批量操作类名</p>
+<p>对象.className=”class类名”<br>对象.className=“ ”；<br>对象.classList.add（“”）  添加类<br>对象.classList.remove（“”）  删除类<br>对象.classList.toggle（“”）  切换类<br>​<br>对象.id=”id名”<br>​<br>外部定义一个样式，加到对象身上，参考第四点<br>操作属性<br>操作标准属性<br>已知的，系统自带</p>
+<p>对象.属性<br>例子 ： img.src<br>自定义属性<br>获取</p>
+<p>对象.getAttrbutte(“name”)<br>设置</p>
+<p>对象.setAttrbutte(“name”,”value”)<br>操作内容<br>innerText：不能识别html的标签对<br>innerHTML: 可以识别html的标签对</p>
+<p>对象.innerText=“内容”<br>对象.innerHTML=“内容”<br>添加事件<br>对象.对象事件=function（）{<br>}<br>元素的尺寸和位置<br>对象.offsetWidth:获取元素的真实宽度<br>对象.offsetHeight:获取元素的真实高度<br>对象.offsetTop：对象的上边框距离具有定位的父元素的内边框的垂直距离<br>对象.offsetLeft：对象的左边框距离具有定位的父元素的内边框的水平距离<br>对象.scrollTop：有滚动条的元素，浏览器滚动时在垂直方向的拉动距离</p>
+<p>body的兼容<br>document.body.scrollTop || document.documentElement.scrollTop</p>
+<p>对象.scrollLeft：有滚动条的元素，浏览器在滚动时在水平方向的拉动距离<br>动态创建标签<br>let div=document.createElement（“标签名”）<br>创建的元素放到也面中：<br>document.body.appendChild（div）<br>父元素.appendChild（子元素）</p>
+<p>引入JS</p>
+<ol>
+<li><p>外部引入方式</p>
+ <head><meta name="generator" content="Hexo 3.9.0">
+     <script src="路径"></script>
+ </head>     </li>
+<li><p>内部引入方式（在html页面中放入srcipt标签，和body同级）</p>
+ <script>
+
+ </script></li>
+<li><p>放在事件后</p>
+ <div onclick="alert(1)">文字等或事件</div>
+​
+注意：
+ ~js的几种引入方式是相互关联的，可以相互操作与访问
+ ~外部js中不能添加srcipt标签对
+ ~嵌入式的js中不能添加src属性
+引入js的执行
+</li>
+<li><p>将srcipt标签对放最最后</p>
+</li>
+<li><p>在.js文档中加入<br>  window.onload=function（）{</p>
+<pre><code>需要执行的js代码块</code></pre><p>  }<br>输出工具</p>
+</li>
+</ol>
+<p>弹出框：alter(‘ ‘); 数字可加可不加’ ‘;<br>输出到控制台：console.log(‘输出到控制台’);<br>输出到html页面中[可以识别html的标签对，即解释为html语言]：document.write(‘</p><h1>输出到html页面中      </h1>‘);<br>输入工具<p></p>
+<p>弹出框输入：var num=prompt(“提示文本”,[默认值])；<br>提示工具</p>
+<p>confirm(“提示内容”)；<br>confirm返回值为true和false<br>注释</p>
+<p>单行注释： ctrl+？或者/      //<br>块注释： ctrl+shift+/或者？        /*   块   */<br>拼接</p>
+<ol>
+<li><p>用“+”拼接</p>
+</li>
+<li><p>模板字符串（es6）：<br><code>&lt;td&gt;${i}-${j}&lt;/td&gt;</code>;   拼接部分用``括起来，变量用  ${变量}<br>识别空格，换行等<br>变量<br>一个容器，存储数据<br>变量的声明：<br>var:<br>let:<br>let命令，用来声明变量。它的用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效</p>
+</li>
+<li><p>适用于for循环</p>
+</li>
+<li><p>先声明，在使用</p>
+</li>
+<li><p>不允许在相同作用域内重复声明同一个变量。</p>
+</li>
+<li><p>let可以识别块级作用域</p>
+</li>
+<li><p>不存在变量提升（先访问后声明）  报错：没有定义<br>const<br>声明一个只读的常量。一旦声明，常量的值就不能改变。<br>声明常量的同时进行赋值，不赋值就会报错<br>可以识别块级作用域<br>不能重复声明<br>不存在变量提升【先访问在声明】</p>
+</li>
+</ol>
+<p>PI；<br>命名规范：<br>数字。字母。下划线组成<br>不能以数字开头<br>区分大小写<br>不能以关键字（js中已经用到的）命名<br>不能以保留字（js中将来会用到的）命名<br>有意义<br>遵循的规则：首字母大写 （Array String Obiect） ；驼峰命名法 （getElementByld）<br>赋值<br>先声明再赋值</p>
+<p>var num;<br>num=10;<br>声明的同时赋值</p>
+<p>var num=10;<br>一次性声明多个变量，再赋值</p>
+<p>var a,b,c;<br>a=1,b=2;<br>c=3;<br>一次性声明多个变量同时复制</p>
+<p>var a=1,b=2,c=3;<br>注意事项：<br>变量要先声明再访问，变量的默认值是undefined<br>新值可以覆盖旧值<br>变量可以用var关键字重新声明<br>不用var关键字声明时必须给变量赋值，并且为全局变量，先访问后声明变量，值为undefined：js执行时先预解析（即识别var 和function声明的变量，不赋值），在解析，一句一句执行。<br>数据类型<br>根据在内存中的存储位置划分。基本数据类型存放在栈中，引用数据类型存放在堆中（指针存放在栈中，内容存放在堆中 ）<br>基本数据类型<br>undefined<br>null 【空占位符】<br>string 【也是对象】<br>模板字符串 字符编码 ASCII utf-8 unicode【万国码】 gb2312<br>​ 转义字符： \ \n[换行] \r \t[制表符] &#39; \ “” </p>
+<p>let 对象=new String（“  ”）；<br>编码<br>对象.charCodeAt(2)  返回第2个位置的字符编码<br>String.fromCharCode（字符编码）  解码<br>​<br>查找元素<br>对象.charAt(0) 字符串的第0个位置的元素【查找字符】<br>​<br>查找下标<br>对象.indexOf（“ ”）   查找对应字符的下标，如果有返回下标，如果没有，返回-1【第一个字符开始的下标】<br>对象.lastIndexOf（“”） 倒着看查找，倒序看如果有返回下标，如果没有，返回-1【第一个字符开始的下标】<br>​<br>对象.search（“”）  正则：有返回0；没有返回-1；<br>对象.match（“”）  有的话，返回数组【返回值，下标，包含返回值的数组，】<br>                没有  返回null<br>​<br>字符串的截取：【返回新值，不改变原内容】<br>对象.substr（开始下标，【截取的长度】）<br>对象.substring（开始下标，结束的下标），从开始下标开始到结束下标之前，不取到结束的下标<br>对象.slice（开始下标，结束的下标），从开始下标开始到结束下标之前，不取到结束的下标【数组的方法】<br>​<br>字符串大小写【转换】<br>let str=”AbCdEf”;<br>str.toLowerCase() 转换为小写<br>str.toUpperCase() 转换为大写<br>​<br>替换：<br>str.replace（“山”，“闪”）；<br>​<br>转换【字符串转换数组】<br>let str=“1,2,3,4,5,6”；<br>arr2=str.split（“，”）；<br>boolean<br>number 2e3=2*10^3</p>
+<p>二进制： 0b开头<br>八进制：以0o{0+字母o}开头，后跟0-7的数<br>十六进制：以0x开头，后跟0-9或者a-f<br>NaN:not a number 本来期望返回数值的操作，但并未返回数值的操作<br>引用数据类型<br>object（属性与方法的集合）数组，函数，对象<br>深拷贝 </p>
+<p>let arr=【1,2,3,4】<br>​<br>let  arr1；<br>​<br>arr1=arr； ：传址<br>​<br>arr1 和 arr具有相同地址<br>浅拷贝：</p>
+<p>let arr=【1,2,3,4】<br>​<br>let arr1=【】<br>​<br>arr.foreach(function（value）{<br>    arr1.push（value）<br>})<br>​<br>判断变量的数据类型 ，其结果为字符串</p>
+<p>typeof用法：<br> var num=”5555”;<br>typeof num;<br>数据类型<br>值<br>情况<br>typeof 的结果【看返回0 1代码的前三位】<br>undefined<br>undefined</p>
+<p>undefined<br>null<br>null（空占位符）</p>
+<p>object<br>boolean 布尔型<br>true false</p>
+<p>boolean<br>string 字符串型<br>带” “或者’ ‘</p>
+<p>string<br>number 数值型<br>整数，小数，八进制，十六进制，十进制</p>
+<p>object</p>
+<p>运算符<br>表达式：能够求值的语句<br>算术运算符</p>
+<ul>
+<li><ul>
+<li><ul>
+<li>/ % ++var   var++  –var   var – </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>的特殊性</li>
+</ul>
+<p>计算：操作对象是数值型<br>拼接：操作对象含有字符串，字符串中进行运算时，用（）括起来<br>自增与自减</p>
+<p>++var: ++在前，先算++，在执行本行的其他语句<br>var++：++在后，先执行本行的其他语句，在算++<br>关系运算符<br>返回值为布尔值 ，即true或者false</p>
+<blockquote>
+<p> &lt;  &gt;=   &lt;=   ==[等于]  ===[全等于]–&gt; 数值和数据类型相同   !=[不等于]   !==[不全等]<br>如果比较的两个对象都是字符串[数字型，字符]，按照ASCII表对应的ASCII码比较，逐位相比<br>如果比较的两个对象都是数值，直接比大小<br>如果一个操作对象是字符串，另一个是操作对象是数值，先尝试将字符串转换为数字，如果转换成功，按照数字比较大小；如果转换不成，则返回false<br>1==true； 0==false ； ==数值相同<br>=== 数值和数据类型相同<br>undefined=null<br>赋值运算符</p>
+</blockquote>
+<p>=  +=[num+=10  等价于  num=num+10]   -=  *=  /=   %=<br>逻辑运算符[与或非]<br>测量值与变量之间的逻辑关系<br>假：0、false undefined null NaN “ ”【空字符串】<br>真：其余为真<br>&amp;&amp;与<br>||或<br>！非【用来取反】<br>A<br>B<br>A &amp;&amp; B<br>A || B<br>!A<br>true<br>true<br>true<br>true<br>false<br>true<br>false<br>false<br>true<br>false<br>false<br>true<br>false<br>true<br>true<br>false<br>false<br>false<br>false<br>true<br>返回值：<br>第一步：先看与或非两边的真假<br>第二步：在看返回的真假的内容<br>&amp;&amp; 同真为真，返回第一个假值 【遵循短路原则：看到假值，后边的不看了】；全为真，返回最后一个真值<br>|| 同假为假，返回第一个真值 【遵循短路原则：看到真值，后边的不看了】；全为假，返回最后一个假值<br>! 取反；返回值只有ture或false<br>运算符的优先级<br>算术&gt;关系运算符&gt;逻辑运算符</p>
+<p>三元运算符：</p>
+<p>表达式?为真的执行语句：为假的执行语句        【类似if  else】<br>一元运算符： typeof + - new<br>特殊运算符： （） .<br>流程控制<br>代码按照指定条件的执行顺序<br>顺序结构<br>分支结构<br>循环结构<br>顺序结构<br>语句按照从上到下的顺序进行执行<br>循环结构<br>当满足条件时，重复不断的执行一段代码<br>for循环：明确知道次数</p>
+<p>for(初始条件；终止条件；步进值){</p>
+<p>}<br>swith循环</p>
+<p>switch(表达式【能够求值的语句】){<br>    case 值1【表达式能取到的值】：语句1；break；<br>    case 值2【表达式能取到的值】：语句2；break；<br>    …<br>    default: 语句；<br>}<br>while循环</p>
+<p>while(条件){<br>    满足条件时，执行语句；<br>}<br>​<br>例子：<br>    var j=0；<br>    while(j&lt;5){<br>        console.log(1);<br>        j++;<br>    }<br>do while循环<br>执行顺序先执行循环体，在执行判断语句</p>
+<p>do{<br>    循环体；<br>}while(条件)<br>​<br>例子：<br>var i=0;<br>do{<br>    console.log(1);<br>    i++;<br>}(i&lt;5)<br>​<br>循环结束<br>continue<br>满足条件终止本次循环</p>
+<p>​<br>break<br>满足条件,终止整个循环</p>
+<p>​<br>分支结构<br>当条件成立时执行相应的语句<br>单分支结构</p>
+<p>if条件：<br>if（表达式）{<br>    为真的执行语句【返回值为true执行的语句】<br>}<br>双分支</p>
+<p>if条件：<br>if（表达式）{<br>    为真的执行语句<br>}<br>else{<br>    为假的执行语句<br>}<br>多分支</p>
+<p>if条件：<br>if（表达式1）{<br>    表达式1成立时执行语句<br>}<br>else if(表达式2){<br>    表达式1不成立 但 表达式2成立时执行语句<br>}<br>else if(表达式3){<br>    表达式1不成立且表达式2不成立【但】表达式3成立时执行语句<br>}<br>else{<br>    以上表达式都不成立时执行的语句<br>}<br>嵌套分支</p>
+<p>if(){<br>    if(){</p>
+<pre><code>}
+else{
+
+}</code></pre><p>}<br>else{<br>​<br>}<br>数学方法<br>取随机数</p>
+<p>Math.random()  ;   (0-1)<br>取整</p>
+<p>向下取整【向左取整】： rgb=Math.floor(Math.random());<br>向上取整【向右取整】： rgb=Math.ceil(Math.random());<br>次幂[x的y次幂]</p>
+<p>Math.pow(x,y)<br>一维数组<br>按照顺序排列的一组相关数据。<br>特点：每一个数组元素都有一个特定的键名（即俗称的下标）[字符串类型]<br>数组元素的默认值时undefined<br>数组的声明[初始化数组]<br>先声明后赋值</p>
+<p> var arr=[];<br> arr[0]=89,arr[0]=”adc”,….;<br>声明的同时赋值</p>
+<p>var arr=[90,89,88,76,56];<br>数组下标的范围<br>访问数组元素，范围【0，n-1】<br>数组的长度<br>数组名.length; 例子： arr.length<br>注意：<br>数组的长度可变</p>
+<p> arr=[90,89,88,76,56];<br>    可以随时添加元素，可跳着添加。如：<br>        arr[6]=”aaa”；<br>数组元素可以时任意的数据类型</p>
+<p>arr=[true,null,{name:},[1,2,3]]<br>遍历数组元素<br>访问数组的每一个元素</p>
+<ol>
+<li>用for循环遍历数组</li>
+</ol>
+<p>for(var i=0;i&lt;arr.length;i++){<br>    arr.[i];   即可访问arr的每个元素<br>}<br>2. 用for in循环遍历数组</p>
+<p>for(var i in arr){<br>    i;  //代表arr的键名（下标）<br>    arr[i];  //元素<br>}<br>3.for of遍历元素</p>
+<p>for（item of arr1）{<br>    arr2.push（item）<br>}<br>4.foreach遍历数组</p>
+<p>用法：<br>arr.forEach(function (value，index){<br>​<br>}）<br>value[名字随便起]:数组中的当前元素【必须有】<br>index[名字随便起]:数组当前元素的下标【键名】【可选】<br>清空数组<br>arr.length=0<br>二维数组<br>声明：</p>
+<p>var arr=[[1,2.3],[“a”,”b”],[78,89];<br>访问：</p>
+<p> arr[行][列]<br>遍历</p>
+<p>for(var i=0;i&lt;arr.length;i++){<br>    for(var j=0;j&lt;arr[i].length;j++){<br>        arr[i][j]<br>    }<br>}<br>数组身上的方法<br>向数组的后面插入一个或多个元素（.push）</p>
+<p>arr.push(需要插入的内容)；<br>删除数组最后一位：.pop</p>
+<p>arr.pop（）<br>在数组之前插入: .unshift</p>
+<p>arr.unshift(“”)<br>在数组之前删除一位：.shift</p>
+<p>arr.shift（）<br>万能的插入和删除：.splice（）</p>
+<p>arr.splice(开始的位置,长度，“再删除的位置加入的元素1”，“再删除的位置加入的元素2”，…);<br>不想删除，让其长度为0；<br>可以返回删除的值：arr.splice（）<br>是否包含某个元素： .includes</p>
+<p>arr.includes（“被包含的内容”）;<br>截取元素： .slice</p>
+<p>arr.slice（2,5）：截取第2位开始的。第5位之前的<br>连接多个数组：.concat</p>
+<p>arr.concat([数组1],[数组2])<br>数组的取反：.reverse</p>
+<p>arr.reverse()<br>把数组转换为字符串: .join</p>
+<p>arr.join（“连接符（-/，/；/..）”）<br>排序：.sort</p>
+<p>arr.sort（（x，y）=&gt; x-y）;  升序<br>arr.sort（（x，y）=&gt; y-x）;  降序<br>​<br>arr.sort(function（x，y）{<br>    return x-y<br>})<br>​<br>查找： .find（）</p>
+<p>arr.find(item=&gt;item&gt;7)        找到第一个比7大的数<br>arr.find(item=&gt;item%2==0)    找第一个偶数<br>​<br>arr.find（function(item){<br>    return item%2==0;<br>}）<br>查找第一个符合条件的下标： .findIndex（）</p>
+<p>let index= arr.findIndex(function(item){<br>   return  item &gt; top     //返回布尔值，为真时返回下标</p>
+<p>})<br>返回符合条件的真假值：.some()</p>
+<p>arr.some（item=&gt;item&gt;8）;<br>返回每一个符合条件的元素：.every()</p>
+<p>arr.every（item=&gt;item&lt;10）;<br>筛选符合条件的：.filter()</p>
+<p>arr.filter（item=&gt;item%2==0）;   返回新数组<br>遍历数组（.forEach）<br>arr.forEach</p>
+<p>用法：<br>arr.forEach(function (value，index){<br>​<br>}）<br>value[名字随便起]:数组中的当前元素【必须有】<br>index[名字随便起]:数组当前元素的下标【键名】【可选】<br>处理每个元素:.map</p>
+<p>arr.map（item=&gt;{return item*10}）  //让数组中的每个元素都执行一个函数，返回一个新数组<br>全部方法<br>concat()<br>连接两个或更多的数组，并返回结果。<br>copyWithin()<br>从数组的指定位置拷贝元素到数组的另一个指定位置中。<br>every()<br>检测数值元素的每个元素是否都符合条件。<br>fill()<br>使用一个固定值来填充数组。<br>filter()<br>检测数值元素，并返回符合条件所有元素的数组。<br>find()<br>返回符合传入测试（函数）条件的数组元素。<br>findIndex()<br>返回符合传入测试（函数）条件的数组元素索引。<br>forEach()<br>数组每个元素都执行一次回调函数。<br>indexOf()<br>搜索数组中的元素，并返回它所在的位置。<br>join()<br>把数组的所有元素放入一个字符串。<br>lastIndexOf()<br>返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索。<br>map()<br>通过指定函数处理数组的每个元素，并返回处理后的数组。<br>pop()<br>删除数组的最后一个元素并返回删除的元素。<br>push()<br>向数组的末尾添加一个或更多元素，并返回新的长度。<br>reduce()<br>将数组元素计算为一个值（从左到右）。<br>reduceRight()<br>将数组元素计算为一个值（从右到左）。<br>reverse()<br>反转数组的元素顺序。<br>shift()<br>删除并返回数组的第一个元素。<br>slice()<br>选取数组的的一部分，并返回一个新数组。<br>some()<br>检测数组元素中是否有元素符合指定条件。<br>sort()<br>对数组的元素进行排序。<br>splice()<br>从数组中添加或删除元素。<br>toString()<br>把数组转换为字符串，并返回结果。<br>unshift()<br>向数组的开头添加一个或更多元素，并返回新的长度。<br>valueOf()<br>返回数组对象的原始值。<br>函数<br>把实现某一特定功能的代码块封装起来，并能够重复调用<br>定义函数</p>
+<ol>
+<li>基本语法（function关键字）【调用可以在声明前，也可以在声明后】</li>
+</ol>
+<p>function 函数名（形参1，形参2,….）{<br>    函数体；<br>    return 返回值；【可有可无】  《并不向用户显示，仅是调用的数的值》<br>}<br>2. 字面量，自变量【必须先声明在调用】【预解析】</p>
+<p>var 变量=function (参数){<br>  函数体；<br>}<br>调用  变量（）<br>3. 对象的方式【实例化对象】</p>
+<p>let aa=new Function（“a”，“b”，“alter（a+b）”）<br>调用   aa（10,20）<br>匿名函数定义与调用</p>
+<p>(function (){</p>
+<p>})()<br>​<br>定义：(function (){</p>
+<p>}<br>调用【一般在定义的时候就调用】：<br>(function (){</p>
+<p>})()<br>箭头函数</p>
+<p>定义：<br>let aa=()=&gt;console.log(123);<br>let aa=(参数)=&gt;{<br>    多行函数体；<br>}<br>调用：<br>    aa(实参)</p>
+<p>函数的调用</p>
+<ol>
+<li><p>函数名（实参1，实参2，….）</p>
+</li>
+<li><p>自变量（）</p>
+</li>
+<li><p>自变量（参数1，参数2）<br>参数<br>能够动态改变函数体的变量，使函数更加灵活<br>形参：<br>定义函数使写在括号里的量。其作用为接收实参<br>形参默认值的传递</p>
+</li>
+<li><p>if else分支结构<br> if(flag==undefined){</p>
+<p> }<br> else{<br>​<br> }</p>
+</li>
+<li><p>三元运算符【用的多】<br> flag=flag==underfined？”&lt;”:flag</p>
+</li>
+<li><p>逻辑或||返回第一个真值【用的多】<br> flag=flag||”&lt;”</p>
+</li>
+<li><p>定义形参的时候直接赋值:当形参为undefined时给形参默认值<br> flag=25555;<br>实参：<br>函数调用时写在括号中的值。其作用为给形参传值<br>全部的实参由arguments接收<br>参数传递<br>参数可以是任意的数据类型<br>参数的传递按顺序传递：从左到右<br>形参=实参 ：一一对应的传递<br>形参&gt;实参：多余的形参赋值为undefined<br>形参&lt;实参：实参由arguments对象来接收<br>剩余参数<br>声明： …rest【为数组】</p>
+</li>
+</ol>
+<p>function 函数名(形参1,…rest){<br>  函数体；<br>}<br>rest和arguments对象的区别</p>
+<ol>
+<li><p>rest接收多余的参数，arguments接收全部的实参</p>
+</li>
+<li><p>rest是数组，能够使用数组的方法，键名从0开始；<br>arguments对象类似数组，不能使用数组的方法<br>函数的返回值：return<br>return 终止函数。遇到return，后面都不执行<br>返回值可以是任意的数据类型<br>一个函数内部可以有多条return分支语句，但最终只执行一条return语句<br>只能返回一个值<br>回调函数<br>把一个函数的指针（函数名）作为参数传递给另一个函数，当指针调用函数时，这个函数叫做回调函数【高阶函数】：形参高阶函数和 返回值高阶函数<br>指针类型</p>
+<p> function math(num1,num2,callback) {</p>
+<pre><code>return callback(num1,num2);</code></pre><p> }<br> function add(num1,num2) {</p>
+<pre><code>return num1+num2;</code></pre><p> }<br> function sub(num1,num2) {</p>
+<pre><code>return num1-num2;</code></pre><p> }<br> function mult(num1,num2) {</p>
+<pre><code>return num1*num2;</code></pre><p> }<br> function div(num1,num2) {</p>
+<pre><code>return num1/num2;</code></pre><p> }<br> document.write(math(1,2,div));<br>函数类型</p>
+</li>
+</ol>
+<p>foreach<br>arguments对象<br>用来接收参数的详细信息<br>每声明一个函数，在其内部自动生成arguments对象<br>arguments对象只在函数内部起作用<br>不是数组类似数组，可以用键名遍历数组（arguments[i]），其长度为arguments.length<br>不能用数组身上的方法<br>闭包函数<br>内部的函数调用外部的函数的【变量】; </p>
+<p>function fn1(){<br>    let a=”456”;<br>    function fn2(){<br>        console.log(a)<br>    }<br>    return fn2;<br>}<br>​<br>let fn2=fn1();<br>fn2()<br>// js中没有函数的重载：传的参数不同，执行不同的函数</p>
+<p>作用域<br>变量起作用的范围<br>局部作用域优先于全局作用域[作用域链]<br>全局作用域</p>
+<ol>
+<li>在整个js中都能访问的变量，凡是进行修改，变量的值就会改变</li>
+<li>类型【情况】<br> 在函数外部用var声明的变量，即拥有全局作用域<br> 不用var声明，但是赋值的变量就是全局变量，即拥有全局作用域；<br>局部作用域</li>
+</ol>
+<p>类型【情况】<br>    形参是局部变量，即拥有局部作用域<br>    在函数内部用var关键字声明的变量，也是局部变量，即拥有局部的作用域。<br>块级作用域</p>
+<p>{<br>  括起来的就是块级作用域；<br>}<br>内置顶层函数<br>内置：ECMAscript自带的函数，本身就有；只要求知道如何让使用，不用关心如何封装<br>顶层：在js代码中的任何位置都可以使用；<br>escape()：将传进来的字符串进行编码</p>
+<p>escape(“编码的内容”);  编码内容一般为中文<br>unescape（）：对编码的字符串进行解码</p>
+<p>unescape(“字符串的编码”)<br>Boolean（）：将其余数据类型转换为布尔型<br>String（）：将任意数据类型转换为字符串型<br>Number（）：将其余数据类型转换为数值型<br>情况</p>
+<ol>
+<li><p>null：0     “”：0    “  ”：0</p>
+</li>
+<li><p>false：0    true：1</p>
+</li>
+<li><p>undefined：NaN</p>
+</li>
+<li><p>进制数转换为十进制</p>
+</li>
+<li><p>去掉没有意义的后导0和前导0</p>
+</li>
+<li><p>字符串： 规范的浮点数，数值型字符串<br>parseInt（）：将字符串转换为整数<br>第一个位置为字母 （+、-）号 空格<br>转换不成功，转换为NaN<br>parseFloat（）：将字符串转换为小数<br>只能转换规范的浮点数<br>转换不成功，返回NaN<br>isNaN():值是否够转换为数值型<br>能转换为数值型返回false<br>不能转换为数值型返回true<br>作用：数据类型转换<br>强制类型转换<br>隐式数据类型转换：算数运算符，逻辑运算符，条件语句（if，while等）<br>对象 类<br>概念<br>类：一群具有相同特征的对象集合的描述<br>对象：具体存在的类个体<br>属性：对象基础信息的描述<br>方法：对象功能的描述<br>定义对象<br>构造函数（类）,实例化对象</p>
+</li>
+<li><p>构造类<br> function 类名（color，price等其他形参）{  </p>
+<pre><code>this.color=color；
+ this.price=price；              //实例化时，this指向实例化的对象
+ this.play=function（）{
+
+ }</code></pre><p> }</p>
+</li>
+<li><p>实例化对象<br> let 对象=new 类名(实参);</p>
+</li>
+<li><p>对象的属性【对象属性的添加】<br> 对象.属性名=“属性值”；           访问：对象.属性名 / 对象【‘属性名’】</p>
+</li>
+<li><p>对象的方法【对象方法的添加】【方法是特殊的属性】<br> 对象.方法名=function（）{}；     访问：对象.方法名（）</p>
+</li>
+<li><p>遍历【i代表的是属性名】<br> for（let i in 对象）{</p>
+<pre><code>i；//属性名，方法
+对象【i】；//属性值</code></pre><p> }</p>
+</li>
+<li><p>对象属性的增删改查：<br> 增加： 对象.属性名=“属性值”；<br> 删除： delete 对象.属性名<br> 修改： 对象.属性名=“属性值”<br> 查讯： 对象.属性名 ；  对象【‘属性名’】<br>JSON [注意格式] 【可直接定义对象】</p>
+</li>
+</ol>
+<p>1.定义<br>    let 对象={<br>        属性名：属性值，     //属性名可以加引号，也可以不加引号<br>        属性名：属性值，<br>        方法名：function（）{<br>​<br>        }，<br>        方法名：function（）{<br>​<br>        }<br>    }<br>2.增删改查<br>    增加： 对象.属性名=“属性值”；<br>    删除： delete 对象.属性名<br>    修改： 对象.属性名=“属性值”<br>    查找： 对象.属性名 ；  对象【‘属性名’】<br>3.遍历<br>    for（let i in 对象）{<br>        i；//属性名，方法<br>        对象【i】；//属性值<br>    }<br>4.对象.constructor  返回   object<br>class定义类，实例化对象<br>重要的关键字[方法]<br>constructor： 返回该对象的构造函数</p>
+<p> 使用： 对象.constructor<br>instanceof：判断函数是否为对象的构造函数？true：false；</p>
+<p>使用 :  对象  instanceof  构造函数<br>原型，原型链</p>
+<p>最大的类：object:[prototype   proto]<br>生成人类：person：【proto prototype】 proto继承父类的prototype<br>生成对象：xb【proto，prototype】 proto继承人类的prototype<br>sing改变函数的指针</p>
+<p>sing.call（xb，10,20）<br>sing.apply（sb，【10,20】）<br>sing.<br>​<br>将小白的say方法传给小红<br>say=xh.say<br>say.call（xh）<br>递归<br>函数自己调用自己,必须有一个 出口</p>
+<p>function fn（num）{<br>    if（num==0）{<br>        return 1;<br>    }<br>    else{<br>        return num*fn(num-1)<br>    }<br>}</p>
+<p>function fnn(arr){<br>        let arr1=[]<br>        for(let i=0;i&lt;arr.length;i++){<br>            if(typeof arr[i]==”object”){<br>                arr1.push(fnn(arr[i]))<br>            }<br>            else{<br>               arr1.push(arr[i])<br>            }<br>        }<br>        return arr1;<br>    }<br>console.log(fnn([0,[1,2],[2,3]]))<br>节点：<br>整个文档 元素【标签】 属性 文本 注释【节点】<br>文档的节点</p>
+<p>document.nodeName   #document<br>document.nodeValue   null<br>document.nodeType   9<br>元素的节点</p>
+<p>let box=documentquerySelector(“box”)<br>box.nodeName   大写的标签名<br>box.nodeValue   null<br>box.nodeType   1<br>节点<br>nodeName（名字）<br>nodeValue（值）<br>nodeType（节点类型）<br>文档节点<br>#document<br>null<br>9<br>元素节点<br>大写的标签名<br>null<br>1<br>属性节点<br>大写的属性名<br>属性值<br>2<br>文本节点<br>#text<br>文本<br>3<br>注释节点<br>#comment<br>注释内容<br>8<br>节点的获取<br>1.childNodes：子节点</p>
+<p>document.childNodes[1].childNodes<br>2.parendNode：父节点</p>
+<p>let box=document.querySelector(“box”) ;<br>​<br>3.上一个兄弟节点：previousSibling</p>
+<p>box.previousSibling<br>3.下一个兄弟节点：nextSibling</p>
+<p>box.nextSibling<br>4.上一个兄弟元素节点：previousElementSibling</p>
+<p>box.previousElementSibling<br>5.下一个兄弟元素节点：nextElementSibling</p>
+<p>box.nextElementSibling<br>节点的方法<br>创建元素节点<br>let div=document.createElement(“div”)<br>在最后插入节点<br>let box=document.querySelector（“.box”）；<br>box.appendChild（div）<br>在之前插入节点.insertBefore(要插入的元素，插入位置之后的元素)<br>let span=document.querySelector(“span”)<br>box.insertBefore(span,div)<br>创建文本节点<br>let text=document.createTextNode（”必须有参数”）<br>text.nodeValue=“这是span标签”<br>span.appendChild(text)<br>创建注释节点<br>let comment1=document.createComment（“这是注释节点”）;<br>box.appendChild(comment1);<br>创建属性节点<br>let attr=document.createAttribute(“id”);<br>添加/设置属性节点<br>.setAttribute(“name”,”value”);//添加属性<br>box.setAttributeNode（attr）<br>添加：append 删除：remove<br>删除标签节点 ： box.removeChild(div)<br>删除属性节点： box.removeChild(“属性名”)<br>DOM（文档对象模型）document object model<br>获取元素<br>获取body：document.body<br>获取html：document.documentElement<br>Dom对象</p>
+<ol>
+<li>获取id名的元素：</li>
+</ol>
+<p>let 变量=document.getElementById(“id名”)<br>    例子： let box=document.getElementById(“id名”)<br>2.获取class名的元素[得到的是集合，可以通过键名访问]</p>
+<p>let 对象=document.getElementsByClassName（“class名”）<br>    通过遍历改变样式<br>集合通过单个下表改变，不能全部用class名同时改变<br>3. 获取标签名的元素[得到的是集合，可以通过键名访问]</p>
+<p>let 对象=document.getElementsByTagName（“标签名”）<br>4.给对象加类</p>
+<p>标签加1个类名<br>    对象.className=“类名”<br>div加多个类名<br>    对象.className=“类名1 类名2 ”<br>5.指定范围的多层级获取【集合】</p>
+<div class="box">
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</div>
+​
+多楼层获取
+let box=document.getElementClassName("box");
+let box1=box.getElementClassName("box1");
+let box2=box1.getElementClassName("box2")
+6.获取选择器选中的元素
+
+<p>let liss=document.querySelector(“【选择器】”);   获取选择器选中的第一个元素<br>let lis=document.querySelectorAll(“【选择器】”); 获取选择器选中的全部元素【集合】【下标或者foreach遍历】<br>7.属性选择器</p>
+<p> <textarea name="con" id="text" cols="30" rows="10"></textarea><br>let con = document.querySelector(“[name=con]”)<br>操作样式<br>获取样式<br>获取行内样式</p>
+<p>对象.style.样式名<br>获取通用的样式【css和行内】</p>
+<p>getComputedStyle(对象,null).样式名<br>设置行内样式</p>
+<p>对象.style.样式名=“样式值”<br>对象.style=“background：red；border-radius：50%”<br>批量操作类名</p>
+<p>对象.className=”class类名”<br>对象.className=“ ”；<br>对象.classList.add（“”）  添加类<br>对象.classList.remove（“”）  删除类<br>对象.classList.toggle（“”）  切换类<br>​<br>对象.id=”id名”<br>​<br>外部定义一个样式，加到对象身上，参考第四点<br>操作属性<br>操作标准属性<br>已知的，系统自带</p>
+<p>对象.属性<br>例子 ： img.src<br>自定义属性<br>获取</p>
+<p>对象.getAttrbutte(“name”)<br>设置</p>
+<p>对象.setAttrbutte(“name”,”value”)<br>操作内容<br>innerText：不能识别html的标签对<br>innerHTML: 可以识别html的标签对</p>
+<p>对象.innerText=“内容”<br>对象.innerHTML=“内容”<br>添加事件<br>对象.对象事件=function（）{<br>}<br>元素的尺寸和位置<br>对象.offsetWidth:获取元素的真实宽度<br>对象.offsetHeight:获取元素的真实高度<br>对象.offsetTop：对象的上边框距离具有定位的父元素的内边框的垂直距离<br>对象.offsetLeft：对象的左边框距离具有定位的父元素的内边框的水平距离<br>对象.scrollTop：有滚动条的元素，浏览器滚动时在垂直方向的拉动距离</p>
+<p>body的兼容<br>document.body.scrollTop || document.documentElement.scrollTop</p>
+<p>对象.scrollLeft：有滚动条的元素，浏览器在滚动时在水平方向的拉动距离<br>动态创建标签<br>let div=document.createElement（“标签名”）<br>创建的元素放到也面中：<br>document.body.appendChild（div）<br>父元素.appendChild（子元素）</p>
+<p>BOM： 浏览器对象模型<br>完成窗口与窗口之间的通信，window对象是其核心对象，<br>history【前进，后退，刷新】 是一个对象 使用【window.history】<br>location【地址】<br>DOM【】<br>screen【屏幕】<br>frames[真窗口]<br>navigation<br>window对象：<br>属性<br>1-1：获取浏览器宽高</p>
+<p>a.ie8及以上<br>    window.innerWidth   [获取浏览器宽度]<br>    window.innerHeight  [获取浏览器高度]<br>b.ie8以下<br>    document.documentElement.ClientWidth [宽度]<br>    document.documentElement.ClientHeight   【高度】<br>1-2： 重新获取浏览器宽高<br>window.onreset=function () {<br>    NewW=window.innerWidth;<br>    NewH=window.innerHeight;<br>}</p>
+<p>1-3：重新设置浏览器大小<br>window.onresize=function（）{</p>
+<p>}</p>
+<p>1-4：浏览器滚动事件<br>window.onscroll=function （）{</p>
+<p>}</p>
+<p>2.浏览器左上角距离屏幕左上角的偏移量</p>
+<p>window.screenTop   [垂直偏移量]<br>window.screenLeft   [水平偏移量]<br>注意：<br>因为window是核心，可以省略window不写<br>方法<br>alert() 弹出框<br>prompt() 输入框<br>confirm() 提示框，返回true或flase<br>close() 关闭页面<br>open(“url”) 打开页面（“打开的页面的路径【根据本html位置的相对路径】”）</p>
+<p>open(“url”,””,”width=300,height=200”);<br>setInterval（fn，毫秒数）：隔毫秒数重复不断的执行一个函数fn</p>
+<p>方法1<br>    let t =setInterval(fn,3000)<br>    function fn(){<br>​<br>    }<br>方法2<br>    setInterval(function(){<br>​<br>    },1000)<br>clearInterval（t）：清除setInterval的时间函数</p>
+<p>let t =setInterval(fn,3000)<br>function fn(){</p>
+<p>}<br>clearInterval（t）<br>setTimeout（fn，1000） 隔一定的时间只执行一次函数<br>cleanTimeout（t） 清除时间函数 【用法同上】<br>获取表单的值</p>
+<p>对象.value=<br>​<br>清空=“”<br>history对象<br>属性：<br>history.length 用来显示历史记录的长度<br>方法<br>history.forward() 前进<br>history.back()后退<br>history.go(0) 刷新 【1 前进，-1后退；不常用】<br>location对象<br>属性：设计获取当前页面的地址<br>location.href=“ ” 设置或获取页面地址 设置新值<br>location.host：主机名+端口号<br>location.hostname：主机名<br>location.port：端口号<br>location.protocol：协议<br>location.pathname： 路径<br>location.search： ？后面的查询【搜索】字段<br>方法<br>location.reload( ) 重新加载<br>location.replace（”网页.html”） 页面替换，不会增加历史记录<br>location.assign（“网页.html”） 页面替换， 能够增加历史记录</p>
+<p>事件<br>事件的添加方式</p>
+<p>节点.onclick=function（e）{<br>​<br>}<br>只能添加一个</p>
+<p>节点.addEventListener(“事件【click】”,事件处理程序，事件类型【布尔值】【可以不给】)<br>可以添加多个事件</p>
+<p>将事件加在元素身上， 在js中定义事件的函数</p>
+<body>
+    <div class="son" onclick="事件函数（）"></div>
+</body>
+<script>
+    function 事件函数（）{
+        函数体 
+    }
+</script>
+事件的构成
+事件源：谁去触发事件谁就是事件源
+事件：鼠标事件/键盘事件
+事件处理程序：
+常用的web端事件
+onclick：单击
+ondblclick：双击
+onmousedown：按下
+onmouseup：抬起
+onmousemove：鼠标移动
+onmouseover：移入
+onmouseout：移出
+onmouseenter：移入
+onmouseleave：移出
+oncontextmenu：右击事件【默认事件】
+
+<p>对象.oncontextmenu=function(e){<br>    e.preventDefault()    //阻止浏览器默认右击行为<br>}<br>onmousewheel 滚轮滚动事件<br>移动端事件<br>ontouchstart：按下<br>ontouchmove：移动<br>ontouchend：抬起<br>事件对象：<br>用来保存事件触发时的信息</p>
+<p>w3c ： 在事件处理程序的形参中<br>ie  ： 在window.event中<br>​<br>解决兼容性：let  event=e || window.event<br>鼠标事件对象常用的属性：<br>clientX : 距离浏览器 X轴 的偏移量 【client设备】<br>clientY：距离浏览器 Y 轴 的偏移量</p>
+<p>从  浏览器的  哪个位置进来<br>offsetX：距离事件源 X轴 的偏移量<br>offsetY：距离事件源 Y轴 的偏移量</p>
+<p>从  事件源的  哪个位置进来<br>screenX：距离屏幕 X轴 的偏移量<br>screenY：距离屏幕 Y轴 的偏移量</p>
+<p>从  屏幕的   哪个位置进来<br>键盘事件<br>onkeydown 键盘按下<br>onkeyup 键盘抬起<br>onkeypress键盘按下：按下功能键ctrl shift alt delete esc等不会触发<br>键盘事件对象常用的属性<br>keyCode：键盘码<br>ctrlKey：是否按下了ctrl<br>shiftKey：是否按下了shift<br>altKey：是否按下了alt<br>key：键名<br>表单事件<br>oninput：输入事件<br>onchange：内容发生改变，并且失去焦点<br>onblur：失去焦点<br>onfocus：获得焦点<br>onsubmit：提交表单<br>onselect：文本选中<br>窗口事件<br>onscroll：滚动事件<br>onload：加载<br>onresize：重新获取浏览器大小<br>事件流<br>当触发一个事件时，由这个事件的容器到整个文档都会按照特定的顺序依次进行触发<br>顺序：子元素 -》 父元素 【具体的到不具体的】<br>事件分类<br>捕获型事件：true【大到小，不具体的事件源到具体的事件源】<br>冒泡型事件：false【小到大，具体的事件源到不具体的事件源】<br>浏览器执行事件的顺序：doc的捕获  html的捕获  body的捕获  具体元素的捕获   具体元素的冒泡  body的冒            泡html的冒泡  doc的冒泡</p>
+<p>阻止事件流</p>
+<p>w3c浏览器<br>    box.addeventListener（“click”，function（event）{<br>        let event=event|| window.event<br>        event.stopPropagation（）<br>    },false）<br>ie浏览器<br>    box.addeventListener（“click”，function（event）{<br>        let event=event|| window.event<br>        event.stopPropagation（）<br>        event.returnValue=true；<br>    },false）<br>事件委派<br>event.target：目标事件源【记录】获取到的是元素/属性：类型：节点；点谁获取到谁<br>ｅｖｅｎｔ．ｔａｒｇｅｔ．ｃｌａｓｓＮａｍｅ　　事件源的类名</p>
+<p>正则<br>定义<br>用来描述或者匹配一系列符合某种规则的字符串，规则可以自己定义<br>作用<br>数据验证<br>内容检索<br>内容替换<br>内容过滤<br>正则对象<br>创建正则对象<br>实例化对象</p>
+<p>let reg = new RegExp(“正则表达式[即规则]”，”模式修正符”)<br>必须传入字符串<br>自变量，字面量</p>
+<p>let reg=/正则表达式/模式修正符             ； (//代表定界符)<br>正则对象常用的方法<br>test（str） 检测正则对象是否能够匹配str ， 返回值 true || false<br>exec( str ) 检测正则对象是否能够匹配str，如果能够匹配，返回一个拥有特殊属性的数组，如果不能匹配，返回null</p>
+<p>let reg = new RegExp(“uek”,”gi”);<br>let bool=reg.test(“<a href="http://www.sxuek.com&quot;" target="_blank" rel="noopener">www.sxuek.com&quot;</a>);  //bool=true<br>​<br>正则表达式<br>原子<br>原子：正则表达式最小的内容【只能匹配一位】<br>\d 匹配 0-9 ;<br>\D 匹配：除了0-9意外的字符<br>\w 匹配：数字、字母、下划线<br>\W 匹配：除了数字字母下划线以外的字符<br>\s 匹配：空白 \n换行 \r回车 \t 制表符<br>\S 匹配：除了空白以外的字符<br>\b 单词的边界<br>\B 非单词边界</p>
+<p>let str=“abc1”<br>let reg=/\w/g;<br>reg.test(str)<br>原子表【只匹配一个】<br>定义： [ ]</p>
+<p>匹配a-c<br>    let str=“abcdef1”<br>    let reg=/[a-c]/g;<br>    reg.test(str)<br>匹配 [a-z]  匹配a-z<br>匹配 [a-zA-Z]  匹配a-z和A-Z<br>匹配 [a-zA-Z0-9]  匹配a-z和A-Z和0-9<br>匹配 [a-zA-Z\s]  匹配a-z和A-Z和空格<br>元字符</p>
+<p>. 代表所有的字符<br>| 或者<br>原子组<br>相当于变量默认保存在内存中；可以使用\1 \2等方式依次引用（）中的内容<br>（？： ）可以使原子组不在内存中存储，不可以调用</p>
+<p>let str1=”山西优逸客”<br>let str2=”陕西优逸客”<br>let reg=/(山西|陕西)优逸客/g；<br>reg.exec(str1)</p>
+<p>let str=”<div>hello</div>“<br>let reg=/&lt;(div)&gt;hello&lt;/\1&gt;/g<br>reg.exec(str);<br>​<br>let str=”<div>div</div>“   //没有变量名<br>let reg=/&lt;(div)&gt;\1&lt;/\1&gt;/g<br>reg.exec(str);<br>​<br>let str=”<div>山西优逸客-山西</div>“<br>let reg=/&lt;(div)&gt;(山西|陕西)优逸客-\2&lt;/\1&gt;/g<br>​<br>let reg=/&lt;(div)&gt;(?:山西|陕西)优逸客-\2&lt;/\1&gt;/g     \2不会被引用<br>数量[手机号/身份证号]</p>
+<ul>
+<li>0个或者多个   》=0   贪婪<br>let phone=”18335219360”;<br>let reg=/\d*/g<br>reg.exec(phone)</li>
+</ul>
+<ul>
+<li>1个或者多个   》=1</li>
+</ul>
+<p>？ 0个或者一个     吝啬</p>
+<p>{11}限制长度为11<br>{15，18} 长度为 15-18<br>{6，}  长度为6以及以上</p>
+<p>贪婪吝啬   +？ 变成吝啬<br>*?<br>+?<br>{11，}？<br>{11,20}？</p>
+<p>边界判断【限制长度】<br>^  以…开始<br>$  以…结束<br>​<br>let reg=/^(0351)-\d{7}$/    </p>
+<p>let str1=”hello word”<br>let reg=/o\b/<br>​<br>模式修正符<br>可以搭配使用 gi mi mg 先后顺序执行<br>g 全局 global<br>记录下标，下一个下标位置开始<br>i 不区分大小写<br>m 可以换行<br>正则的使用场所<br>正则对象<br>str对象 中的 str.split（正则对象） 拆分</p>
+<p>let str=”山西有一棵：1,2.3”<br>str.split(/[: , .]/)<br>str对象 中的 str.replace（正则对象） 替换</p>
+<p>let str=”山西有课山西有了”<br>str.replace（/（山西）/g，陕西）<br>str对象 中的 str.search（正则对象） 查找</p>
+<p>let str=”山西有课山西有了”<br>str.search（/（山西|有一颗）/）<br>常用的正则</p>
+<p>用户名 /^[a-z0-9_-]{3,16}$/<br>密码  /^[a-z0-9_-]{6,18}$/<br>十六进制值   /^#?([a-f0-9]{6}|[a-f0-9]{3})$/<br>电子邮箱    /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/<br>/^[a-z\d]+(.[a-z\d]+)<em>@(<a href="-[\da-z]">\da-z</a>?)+(.{1,2}[a-z]+)+$/<br>URL /^(https?://)?([\da-z.-]+).([a-z.]{2,6})([/\w .-]</em>)<em>/?$/<br>IP 地址   /((2[0-4]\d|25[0-5]|[01]?\d\d?).){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)/<br>/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/<br>HTML 标签 /^&lt;([a-z]+)([^&lt;]+)</em>(?:&gt;(.<em>)&lt;/\1&gt;|\s+/&gt;)$/<br>删除代码\注释    (?&lt;!http:|\S)//.</em>$<br>Unicode编码中的汉字范围 /^[\u2E80-\u9FFF]+$/</p>
+<p>日期对象/函数</p>
+<p>自定义时间<br>let ay=new Date(“2018/8/8 12:00:00”)<br>​<br>let ay1=new Date(“12:00:00 2018/8/8”)<br>​<br>let ay2=new Date(“2018,0,8”)   //月份从0开始<br>获取当前格林尼治时间<br>let now=new Date()   //获取当前格林尼治时间<br>now.setFullYear(2020)   设置年份<br>now.setMonth(5)   6月份<br>now.setDate(26)  26号<br>now.setHours（12） 12时<br>now.setMinutes(0)   分<br>now.setSeconds（0）  秒<br>now.setMilliseconds（0） 毫秒<br>​<br>获取世界协调时间【用法同上】<br>now.setUTCFullYear()<br>now.setUTCMonth（）<br>now.setUTCDate（）<br>now.setUTCHours（12） 12时<br>now.setUTCMinutes(0)   分<br>now.setUTCSeconds（0）  秒<br>now.setUTCMilliseconds（0） 毫秒<br>​<br>​<br>//获取时间<br>now.getFullYear()         //now.getUTCFullYear()<br>now.getMonth（）+1<br>now.getDate（）<br>now.getDay() 星期<br>now.getHours()<br>now.getMinutes()<br>now.getSeconds()<br>now.getMilliseconds（0）<br>​<br>//获取毫秒数<br>now.getTime()  1970.1.1.0的毫秒数<br>时间案例</p>
+<p>倒计时<br>    jishi()<br>    setInterval(jishi,2000);<br>    function jishi(){<br>        let arr=daoJiShi();<br>        span9.forEach(function (value,index) {<br>            value.innerText=arr[index];<br>        })<br>    }<br>    function daoJiShi() {<br>        let arr=[];<br>        let now=new Date();<br>        let future=new Date(2018,6,26,18);<br>        let times=future.getTime();  //未来的毫秒数<br>        let time=now.getTime();//现在的毫秒数<br>        let juXianZai=Math.floor((times-time)/1000); //2018.9.1到现在时间的秒数<br>        let Month=Math.floor(juXianZai/(30<em>24</em>60<em>60));<br>        arr.push(Month);<br>        juXianZai=juXianZai%(30</em>24<em>60</em>60);<br>​<br>        let Day=Math.floor(juXianZai/(24<em>60</em>60));<br>        arr.push(Day);<br>        juXianZai=juXianZai%(24<em>60</em>60);<br>​<br>        let shi=Math.floor(juXianZai/(60<em>60));<br>        if(shi&gt;0 &amp; shi&lt;9){<br>            shi=”0”+shi;<br>        }<br>        arr.push(shi);<br>        juXianZai=juXianZai%(60</em>60);<br>​<br>        let fen=Math.floor(juXianZai/(60));<br>        if(fen&gt;0 &amp; fen&lt;9){<br>            fen =”0”+fen;<br>        }<br>        arr.push(fen);<br>        let miao=Math.floor(juXianZai%60);<br>        if(miao&gt;0 &amp; miao&lt;9){<br>            miao=”0”+miao;<br>        }<br>        arr.push(miao);<br>        return arr;<br>    }<br>}<br>​</p>
+<p>轮播图<br>双下标</p>
+<p>window.onload=function () {<br>    let Box1=document.querySelectorAll(“div.box .box1”);   //5个小盒子盒子<br>    let box=document.querySelector(“div.box”);            //大盒子<br>    let Width=parseInt(getComputedStyle(box,null).width);   //小盒子的宽度<br>    let Left=document.querySelector(“div.box .left”);    //左右两个盒子<br>    let Right=document.querySelector(“div.box .right”);<br>    let circle=document.querySelector(“div.box .circle”);  //小圆圈<br>    let Son=document.querySelectorAll(“div.box .circle .son”);//小点<br>    console.log(Box1,Width,Left,Right,Son);<br>    let now=0;<br>    let next=0;<br>    flag=true;<br>    let t=setInterval(move2,2000);<br>    //右向左<br>    function move2() {<br>        next++;<br>        if(next==Box1.length){<br>            next=0;<br>        }<br>        // 就绪<br>        Son[next].classList.add(“son1”);<br>        Son[now].classList.remove(“son1”);<br>        Box1[next].style.left=Width+”px”;<br>        //动画<br>        animate(Box1[next],{left:0});<br>        animate(Box1[now],{left:-Width},function () {<br>            flag=true;<br>        });<br>        now=next;<br>    }<br>    //左向右<br>    function move3() {<br>        next–;<br>        if(next&lt;0){<br>            next=Box1.length-1;<br>        }<br>        //就绪<br>        Box1[next].style.left=-Width+”px”;<br>        Son[next].classList.add(“son1”);<br>        Son[now].classList.remove(“son1”);<br>        //动画<br>        animate(Box1[next],{left:0});<br>        animate(Box1[now],{left:Width},function () {<br>            flag=true;<br>        });<br>        now=next;<br>    }<br>    box.onmouseenter=function () {<br>        clearInterval(t);<br>    }<br>    box.onmouseleave=function () {<br>        t=setInterval(move2,2000)<br>    }<br>    Left.onclick=function () {<br>        if(flag==false){<br>            return;<br>        }<br>        if(next==0){<br>            return;<br>        }<br>        flag=false;<br>        move3();<br>    }<br>    Right.onclick=function () {<br>       if(flag==false){<br>            return;<br>        }<br>        if(next==Box1.length-1){<br>            return;<br>        }<br>        flag=false;<br>        move2();<br>    }<br>    Son.forEach(function(value,index){<br>        value.onclick=function(){<br>            if(index==now){<br>                return;<br>            }<br>            else if(index&gt;now){<br>                Son[index].classList.add(“son1”);<br>                Son[now].classList.remove(“son1”);<br>                //就绪<br>                Box1[now].style.left=-Width+”px”;<br>                Box1[index].style.left=0;<br>            }<br>            else if(index&lt;now){<br>                Son[index].classList.add(“son1”);<br>                Son[now].classList.remove(“son1”);<br>                //就绪<br>                Box1[now].style.left=Width+”px”;<br>                Box1[index].style.left=0+”px”;<br>            }<br>            now=next=index;<br>        }<br>    })<br>}<br>单下标</p>
+<p>tupian下包含 a a下包含img<br>tupian x y 同级<br>    let tupian = daohang.getElementsByClassName(“tupian”)[0];<br>    let a1 = tupian.getElementsByTagName(“a”);<br>    let img = tupian.getElementsByTagName(“img”);<br>    let z = daohang.getElementsByClassName(“z”)[0];<br>    let y = daohang.getElementsByClassName(“y”)[0];<br>    let x = daohang.getElementsByClassName(“x”)[0];<br>    let Son = x.getElementsByClassName(“son”);<br>    num = 0;<br>    let t = setInterval(move, 2000);<br>    function move() {<br>        num++;<br>        if (num == img.length) {<br>            num = 0;<br>        }<br>        for (let i = 0; i &lt; img.length; i++) {<br>            a1[i].style.zIndex = 20;<br>            Son[i].className = “son”;<br>        }<br>        Son[num].className = “son son1”;<br>        a1[num].style.zIndex = “30”<br>    }<br>    img.onmouseenter = function () {<br>        clearInterval(t)<br>    }<br>    img.onmouseleave = function () {<br>        t = setInterval(move, 2000)<br>    }<br>    tupian.onmouseenter = function () {<br>        clearInterval(t);<br>    }<br>​<br>    tupian.onmouseleave = function () {<br>        t = setInterval(move, 2000);<br>    }<br>    z.onclick = function () {<br>        a1[num].style.zIndex = 20;<br>    }<br>    y.onclick = function () {<br>        move();<br>    }<br>    for (let i = 0; i &lt; Son.length; i++) {<br>        Son[i].onclick = function () {<br>            for (let j = 0; j &lt; Son.length; j++) {<br>                Son[j].className = “son”;<br>            }<br>            a1[i].style.zIndex = “40”;<br>            Son[i].className = “son son1”;<br>            num = i;<br>        }<br>    }<br>    function move1() {<br>        num–;<br>        if (num &lt; 0) {<br>            num = a1.length - 1;<br>        }<br>        for (let j = 0; j &lt; a1.length; j++) {<br>            a1[j].style.zIndex = 20;<br>            Son[j].className = “son”<br>        }<br>        Son[num].className = “son son1”<br>        a1[num].style.zIndex = 30;<br>    }<br>    z.onclick = function () {<br>        move1();<br>    }<br>透明度轮播</p>
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播</title>
+    <script src="jquery-3.2.1.js"></script>
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        list-style: none;
+    }
+    div.box{
+        height: 250px;
+        width: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+    div.box .imgbox{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    div.box .imgbox div{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        opacity: 0;
+    }
+    div.box .imgbox .active{
+        opacity: 1;
+    }
+    div.box .next{
+        height: 50px;
+        width: 15px;
+        position: absolute;
+        right: 0;
+        top:50%;
+        margin-top:-25px;
+        background: black;
+        opacity: 0.8;
+    }
+    div.box .pre{
+        height: 50px;
+        width: 15px;
+        position: absolute;
+        left: 0;
+        top:50%;
+        margin-top:-25px;
+        background: black;
+        opacity: 0.8;
+    }
+    div.box ul{
+        height: 10px;
+        width: 50px;
+        position: absolute;
+        bottom:25px;
+        right:25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.box ul li{
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: white;
+    }
+    div.box ul .active{
+        background: #b0b0b0;
+    }
+</style>
+<body>
+    <div class="box">
+        <div class="imgbox">
+            <div class="active" style="background: red;"></div>
+            <div style="background: green;"></div>
+            <div style="background: yellow;"></div>
+        </div>
+        <div class="next"></div>
+        <div class="pre"></div>
+        <ul>
+            <li class="active"></li>
+            <li class></li>
+            <li class></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    $(function(){
+        let num=0;
+        let t=setInterval(move,2000);
+        function move(type="next"){
+            if(type=="next"){
+                num++;
+            }else if(type=="pre"){
+                num--;
+            }
+            if(num>=$("div.box .imgbox div").length){
+                num=0
+            }
+            if(num<0){
+                num=$("div.box .imgbox div").length-1
+            }
+            $("div.box .imgbox div")
+                .removeClass("active")
+                .eq(num).addClass("active")
+            $("div.box ul li")
+                .removeClass("active")
+                .eq(num).addClass("active")
+        }
+        $("div.box .pre").click(function(){
+            move("pre")
+        })
+        $("div.box .next").click(function(){
+            move()
+        })
+        $("div.box").hover(function(){
+            clearInterval(t)
+        },
+        function(){
+            t=setInterval(move,2000);
+        })
+        $("li").click(function(){
+            let a=$(this).index();
+            $("div.box .imgbox div")
+                .removeClass("active")
+                .eq(a).addClass("active")
+            $("div.box ul li")
+                .removeClass("active")
+                .eq(a).addClass("active")
+            num=a
+        })
+    })
+
+<p></script><p></p>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2019年11月23日 13:32</p>
+        <p>原始链接： <a class="post-url" href="/2019/11/23/JS知识点总结/" title="JS知识点总结">http://yoursite.com/2019/11/23/JS知识点总结/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="John Doe">
+                John Doe
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        请我吃糖~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/11/23/JS知识点总结/&title=《JS知识点总结》 — Hexo&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/11/23/JS知识点总结/&title=《JS知识点总结》 — Hexo&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/11/23/JS知识点总结/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JS知识点总结》 — Hexo&url=http://yoursite.com/2019/11/23/JS知识点总结/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/11/23/JS知识点总结/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/11/23/JS知识点总结/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/writer:QS/" class="color5">writer:QS</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#js知识点总结"><span class="post-toc-text">js知识点总结</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#null"><span class="post-toc-text">输出到html页面中      </span></a>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/23/HTML知识点总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">HTML知识点总结</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 John Doe<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/writer-QS/" style="font-size: 10px;">writer:QS</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/writer-QS/" style="font-size: 10px;">writer:QS</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
